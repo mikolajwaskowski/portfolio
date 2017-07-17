@@ -1,0 +1,44 @@
+/**
+ * 
+ *  Variables
+ *
+ */
+
+// Global font - Signika
+
+// Fonts import - comment unnecessary
+@import url('https://fonts.googleapis.com/css?family=Signika:300,400,600,700&subset=latin-ext');
+$font-signika: 'Signika', sans-serif;
+
+/**
+*
+* Typography
+*
+*/
+
+// Weights
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 600;
+$fw-bold: 700;
+
+// Sizes
+$fs-mini: 14px;
+$fs-small: 18px;
+$fs-normal: 20px;
+$fs-medium: 24px;
+
+// Colors
+$fc-primary: rgba(0,0,0,0.8);
+
+// Spacing
+$lh-16: 1.6;
+
+
+/*
+*
+* Colors
+*
+*/
+$primary-color: #1184FE;
+

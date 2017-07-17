@@ -3,15 +3,14 @@
 
 Link to live version: [mwaskowski.pl/portfolio](#)
 
-[](screenshot.png)
+![](screenshot.png)
 
 ## Goals
 - [ ] Design: Simple and clean, pure animation
+- [ ] HTML: HTML5
 - [ ] CSS: BEM, ~~frameworks~~
 - [ ] JS: ES6 witch babel conversion
-- [ ] HTML: HTML5
 - [ ] SEO: Schema.org
-
 
 ## Commands
 
@@ -19,7 +18,7 @@ List of commands:
 
 ```sh
 npm install
-npm test
+gulp serve
 ```
 
 ## Built With

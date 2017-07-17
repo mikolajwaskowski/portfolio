@@ -1,0 +1,21 @@
+/*
+*
+* Menu styles
+*
+*/
+@import '../variables'; 
+
+.menu {
+	width: 100%;
+	align-self: flex-start;
+}
+.menu__brand {
+	line-height: 1.2;
+}
+.menu__brand small {
+	display: block;
+	font-size: $fs-mini;
+}
+.menu__trigger {
+	float: right;
+}
