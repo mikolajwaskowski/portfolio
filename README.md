@@ -3,8 +3,7 @@
 
 Link to live version: [mwaskowski.pl/portfolio](#)
 
-Screenshot:
-![](screenshot.png)
+[](screenshot.png)
 
 ## Goals
 - [ ] Design: Simple and clean, pure animation
@@ -13,14 +12,20 @@ Screenshot:
 - [ ] HTML: HTML5
 - [ ] SEO: Schema.org
 
+
 ## Commands
 
-List of commandsL 
+List of commands:
 
 ```sh
 npm install
 npm test
 ```
+
+## Built With
+
+* [Google Web Starter Kit](https://github.com/google/web-starter-kit)
+
 
 ## Release History
 * 0.2
@@ -33,6 +38,6 @@ npm test
 
 Mikolaj Waskowski &copy; 2017
 
-Facebook: [@waskowski.mikolaj](https://www.facebook.com/waskowski.mikolaj)
-Twitter: [@waskowskim](https://twitter.com/waskowskim)
+Facebook: [@waskowski.mikolaj](https://www.facebook.com/waskowski.mikolaj) 
+Twitter: [@waskowskim](https://twitter.com/waskowskim) 
 Blog (Polish): [mwaskowski.pl](http://mwaskowski.pl/)
