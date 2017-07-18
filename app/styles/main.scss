@@ -19,11 +19,15 @@ Note: any .css or .scss files included in the 'styles' directory
 will be correctly compiled during `gulp serve` and `gulp`
  */
 
+ /* Reset browser styles */
+@import 'reset';
+
 /* Theme variables */
 /* @import 'variables'; */
 
 /* Theme base - default and global values */
 @import 'base';
+@import 'components/button';
 
 /* Components */
 @import 'components/section';

@@ -23,10 +23,16 @@ $fw-medium: 600;
 $fw-bold: 700;
 
 // Sizes
-$fs-mini: 14px;
-$fs-small: 18px;
-$fs-normal: 20px;
-$fs-medium: 24px;
+$fz-mini: 14px;
+$fz-small: 18px;
+$fz-normal: 20px;
+$fz-medium: 24px;
+// Headers
+$fz-h1: 3.2rem;
+$fz-h2: 3rem;
+$fz-h3: 2.4rem;
+$fz-h4: 2rem;
+$fz-h5: 1.4rem;
 
 // Colors
 $fc-primary: rgba(0,0,0,0.8);
@@ -34,11 +40,26 @@ $fc-primary: rgba(0,0,0,0.8);
 // Spacing
 $lh-16: 1.6;
 
+$paragraph-padding: 0 0 1rem 0;
+$button-padding: 0.5rem 1.2rem;
+$button-no-padding: 0.5rem 0.6rem;
 
 /*
 *
 * Colors
 *
 */
-$primary-color: #1184FE;
+$brand-primary: #1184FE;
+$brand-secondary: #666;
+$brand-secondary-lighten: lighten(#666, 40%);
 
+
+
+
+/*
+*
+* Theme specified values
+*
+*/
+
+$menu-padding: 1rem;

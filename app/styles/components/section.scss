@@ -3,11 +3,63 @@
 * Section Component Styles
 *
 */
+@import '../variables'; 
+
+.container {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
 
 .section {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  min-height: 700px;
+}
+.section--left {
+  .section__text {
+    order: 1;
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+  .section__media {
+    order: 2;
+  }
+}
+
+.section__text {
+  order: 2;
+	width: 50%;
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+  padding-left: 2rem;
+
+  p {
+    padding-bottom: 1rem
+  }
+}
+
+.section__title {
+  color: $brand-primary;
+}
+
+.section__media {
+  order: 1;
+  width: 50%;
+  text-align: center
+}
+
+
+.gradient-image {
+  height: 100vh;
+  background: -moz-linear-gradient(45deg, rgba(0,0,0,0.16) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.16) 0%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(45deg, rgba(0,0,0,0.16) 0%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29000000', endColorstr='#00000000',GradientType=1 );
 }

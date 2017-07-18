@@ -1,0 +1,26 @@
+/*
+*
+* Buttons styles
+*
+*/
+@import '../variables'; 
+
+.button {
+	padding: $button-padding;
+  background-color: $brand-secondary-lighten;
+  border: 1px solid $brand-secondary-lighten;
+  color: #fff;
+  line-height: 1;
+  font-size: $fz-small;
+}
+
+.button--primary {
+	border: 1px solid $brand-primary;
+	background-color: $brand-primary;
+	color: #fff;
+}
+
+.button--outline {
+	background: transparent;
+  color: $brand-secondary;
+}

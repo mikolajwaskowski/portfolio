@@ -7,15 +7,27 @@
 
 .menu {
 	width: 100%;
-	align-self: flex-start;
+	padding: $menu-padding 0;
+  height: 50px;
 }
+
 .menu__brand {
 	line-height: 1.2;
 }
+
 .menu__brand small {
 	display: block;
-	font-size: $fs-mini;
+	font-size: $fz-mini;
 }
+
 .menu__trigger {
 	float: right;
+  padding: $button-no-padding;
+  border: 0;
+  opacity: 0.38;
+  font-size: $fz-mini;
+  
+  &:hover {
+    opacity: 1;
+  }
 }
