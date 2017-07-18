@@ -9,8 +9,9 @@
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 32px;
 	box-sizing: border-box;
+  background-color: #fff;
 }
 
 .section {
@@ -25,8 +26,6 @@
 .section--left {
   .section__text {
     order: 1;
-    padding-left: 0;
-    padding-right: 2rem;
   }
   .section__media {
     order: 2;
@@ -36,9 +35,8 @@
 .section__text {
   order: 2;
 	width: 50%;
-  padding-bottom: 3rem;
+  padding: 0 2rem 3rem;
   box-sizing: border-box;
-  padding-left: 2rem;
 
   p {
     padding-bottom: 1rem
@@ -58,8 +56,34 @@
 
 .gradient-image {
   height: 100vh;
-  background: -moz-linear-gradient(45deg, rgba(0,0,0,0.16) 0%, rgba(0,0,0,0) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.16) 0%,rgba(0,0,0,0) 100%);
-  background: linear-gradient(45deg, rgba(0,0,0,0.16) 0%,rgba(0,0,0,0) 100%);
+  position: relative;
+  background: -moz-linear-gradient(45deg, #ededed 0%, #fff 100%);
+  background: -webkit-linear-gradient(45deg, #ededed 0%,#fff 100%);
+  background: linear-gradient(45deg, #ededed 0%,#fff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29000000', endColorstr='#00000000',GradientType=1 );
+  
+  .container {
+    background: transparent;
+  }
+
+  &:after {
+    content: '';
+    width: 21px;
+    height: 34px;
+    background: url('../images/icon-scroll.svg') no-repeat center top;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -10px;
+    animation: scroll-bounce 4s infinite;
+  }
+}
+
+@keyframes scroll-bounce {
+  84%   { transform: translateY(0); }
+  88%   { transform: translateY(5px); }
+  92%   { transform: translateY(0); }
+  96%   { transform: translateY(5px); }
+  100%   { transform: translateY(0); }
 }

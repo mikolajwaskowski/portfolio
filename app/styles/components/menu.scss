@@ -24,10 +24,23 @@
 	float: right;
   padding: $button-no-padding;
   border: 0;
-  opacity: 0.38;
-  font-size: $fz-mini;
+  opacity: 0.16;
+  color: #000;
+  font-size: 15px;
+  font-weight: $fw-normal;
+
+  &:after {
+    content: '';
+    width: 18px;
+    height: 13px;
+    background: url('../images/icon-menu.svg') no-repeat 0 0;
+    background-size: 18px 13px;
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: -1px;
+  }
   
   &:hover {
-    opacity: 1;
+    opacity: 0.62;
   }
 }
