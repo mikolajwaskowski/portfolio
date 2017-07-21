@@ -3,7 +3,7 @@
 * Section Component Styles
 *
 */
-@import '../variables'; 
+@import '../variables';
 
 .container {
 	width: 100%;
@@ -11,7 +11,6 @@
 	margin: 0 auto;
 	padding: 0 32px;
 	box-sizing: border-box;
-  background-color: #fff;
 }
 
 .section {
@@ -31,11 +30,56 @@
     order: 2;
   }
 }
-
+.section--portfolio-item {
+  padding: 120px 80px;
+  min-height: 400px;
+}
+.section__media--portfolio-item {
+  position: relative;
+  overflow: hidden;
+  padding-top: 15px;
+}
+.section__text--portfolio-item, .section__media--portfolio-item {
+  align-self: flex-end;
+}
+.section__media--portfolio-item:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  box-shadow:0 0 40px rgba(0,0,0,0.26);
+  border-radius: 100%;
+}
+.section__media--portfolio-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: $portfolio-item-width;
+}
+.section__media--portfolio-item:before {
+  content: '● ● ●';
+  text-align: left;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  max-width: $portfolio-item-width;
+  height: 14px;
+  margin: 0 auto;
+  padding: 0 8px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-sizing: border-box;
+  background-color: #dadada;
+}
 .section__text {
   order: 2;
 	width: 50%;
-  padding: 0 2rem 3rem;
+  padding: 0 2rem 2rem;
   box-sizing: border-box;
 
   p {
@@ -46,25 +90,25 @@
 .section__title {
   color: $brand-primary;
 }
-
 .section__media {
   order: 1;
   width: 50%;
-  text-align: center
+  text-align: center;
 }
 
-
-.gradient-image {
-  height: 100vh;
+.background {
+  min-height: 100vh;
   position: relative;
+  background-color: #eee;
+  .container {
+    background: transparent;
+  }
+}
+.background--header {
   background: -moz-linear-gradient(45deg, #ededed 0%, #fff 100%);
   background: -webkit-linear-gradient(45deg, #ededed 0%,#fff 100%);
   background: linear-gradient(45deg, #ededed 0%,#fff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29000000', endColorstr='#00000000',GradientType=1 );
-  
-  .container {
-    background: transparent;
-  }
 
   &:after {
     content: '';
@@ -79,7 +123,6 @@
     animation: scroll-bounce 4s infinite;
   }
 }
-
 @keyframes scroll-bounce {
   84%   { transform: translateY(0); }
   88%   { transform: translateY(5px); }
@@ -87,3 +130,19 @@
   96%   { transform: translateY(5px); }
   100%   { transform: translateY(0); }
 }
+
+.background--dark {
+  background-color: #000;
+  color: rgba(255,255,255,.6);
+}
+
+.background--dark a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.section--dark {
+  min-height: 900px;
+}
+
+

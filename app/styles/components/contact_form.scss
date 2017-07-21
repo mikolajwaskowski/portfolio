@@ -1,0 +1,49 @@
+/*
+*
+* Contact form styles
+*
+*/
+@import '../variables';
+
+.contact-form {
+  display: block;
+  width: 100%;
+}
+
+.contact-form__input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  font-size: $fz-small;
+  padding: 0.6rem 19px;
+  box-sizing: border-box;
+  border-left: 1px solid $brand-primary;
+  color: rgba(255,255,255,0.8);
+  margin: 0.6rem 0;
+  outline: none;
+  max-height: 260px;
+  max-width: 560px;
+}
+
+.contact-form__input:hover, .contact-form__input:focus {
+  transition: all 0.1s;
+  box-sizing: border-box;
+  padding: 0.6rem 16px;
+  border-left: 4px solid $brand-primary;
+  background: rgba(255,255,255,0.05);
+}
+
+.contact-form__input--error {
+  display: none;
+  font-size: $fz-mini;
+  color: $color-red;
+  margin-bottom: 1rem;
+}
+
+
+.contact-form__message {
+  display: none;
+  font-size: $fz-medium;
+  color: rgba(255,255,255,0.8);
+}

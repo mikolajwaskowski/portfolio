@@ -3,7 +3,7 @@
 * Buttons styles
 *
 */
-@import '../variables'; 
+@import '../variables';
 
 .button {
 	padding: $button-padding;
@@ -19,10 +19,24 @@
 	background-color: $brand-primary;
 	color: #fff;
 }
+.button--green {
+  border: 1px solid $color-green;
+  background-color: $color-green;
+  color: #fff;
+}
 
 .button--outline {
 	background: transparent;
   color: $brand-secondary;
+}
+.button--text {
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  font-weight: $fw-medium;
+}
+.button--text.button--green {
+  color: $color-green;
 }
 
 .button__icon {
@@ -36,13 +50,22 @@
   opacity: .3;
 }
 
+.button--loading {
+  transition: opacity 0.3s;
+  opacity: 0.6;
+  animation: pulse 0.4s infinite;
+}
+
+@keyframes pulse {
+  50%   { transform: scale(0.94, 0.94); }
+}
 
 
 /*
 *
 * Button Spacing
 *
-*/ 
+*/
 
 .button + .button {
   margin-left: 16px

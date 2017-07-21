@@ -1,0 +1,33 @@
+/**
+*
+* Images Styles
+*
+*/
+@import '../variables';
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image--centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image--avatar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.image--circular {
+  border-radius: 50%;
+}
+
+.image--avatar-description {
+  max-width: 400px;
+  width: 90%;
+  margin: 1rem auto;
+  font-size: $fz-small;
+}

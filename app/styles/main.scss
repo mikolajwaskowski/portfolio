@@ -28,7 +28,10 @@ will be correctly compiled during `gulp serve` and `gulp`
 /* Theme base - default and global values */
 @import 'base';
 @import 'components/button';
+@import 'components/image';
 
 /* Components */
 @import 'components/section';
 @import 'components/menu';
+@import 'components/contact_form';
+

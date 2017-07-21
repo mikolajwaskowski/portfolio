@@ -45,7 +45,7 @@
         // i.e. whether there's an existing service worker.
         if (navigator.serviceWorker.controller) {
           // The updatefound event implies that registration.installing is set:
-          // https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#service-worker-container-updatefound-event
+          // https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html
           var installingWorker = registration.installing;
 
           installingWorker.onstatechange = function() {
@@ -72,5 +72,133 @@
     });
   }
 
-  // Your custom JavaScript goes here
+  // Custom JavaScript
+
+  /**
+  * Gets contact form input values
+  * @return {object} set of inputs -> object[input_name] = input_value
+  */
+  function getFormData() {
+    var form = document.getElementById('contact_form');
+    // get form inputs data
+    var data = {};
+    Object.keys(form.elements).map(function(key) {
+      if (isNaN(key)) {
+        data[key] = form.elements[key].value;
+      }
+    });
+    return data;
+  }
+
+  /**
+  * Email validation regexp
+  * @param {string} email for validation
+  * @return {boolean} email validation result
+  */
+  function emailValid(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return !re.test(email);
+  }
+
+  /**
+  * Form state - loading
+  * @param {Object} event DOM form event
+  * @return {boolean} is loading? true
+  */
+  function formLoading(event) {
+    // make visual change for loading state
+    event.target.children.contact_form__submit.disabled = true;
+    event.target.children.contact_form__submit.value = 'Wysyłanie...';
+    event.target.children.contact_form__submit.className += ' button--loading';
+    document.getElementById('form__error').style.display = 'none';
+
+    return true;
+  }
+  /**
+  * Form loading state - reset
+  * @param {Object} event DOM form event
+  * @return {boolean} is loading? false
+  */
+  function formLoadingReset(event) {
+    // make visual change for loading state
+    event.target.children.contact_form__submit.disabled = false;
+    event.target.children.contact_form__submit.value = 'Wyślij';
+    event.target.children.contact_form__submit.className = 'button button--primary';
+
+    return false;
+  }
+  /**
+  * Detects empty inputs in form
+  * @param {Object} event DOM form event
+  * @return {boolean} every form inputs filled?
+  */
+  function inputsFilled(event) {
+    var filled = true;
+    if (event.target.message.value.length === 0) {
+      filled = false;
+    }
+    if (event.target.name.value.length === 0) {
+      filled = false;
+    }
+    if (event.target.email.value.length === 0) {
+      filled = false;
+    }
+
+    return filled;
+  }
+
+  /**
+  * Send form data
+  * @param {Object} event DOM event
+  */
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    var data = getFormData();
+    var isLoading = false;
+    var allInputsFilled = inputsFilled(event);
+
+    // VALIDATION
+    if (isLoading || !allInputsFilled) {
+      document.getElementById('form__error').innerHTML = 'Uzupełnij wszystkie pola formularza';
+      document.getElementById('form__error').style.display = 'block';
+    } else if (emailValid(data.email)) {
+      document.getElementById('form__error').innerHTML = 'Wpisz prawidłowy adres e-mail';
+      document.getElementById('form__error').style.display = 'block';
+    } else {
+      // VALIDATION PASSED
+      isLoading = formLoading(event);
+      var url = event.target.action;
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onreadystatechange = function() {
+        isLoading = formLoadingReset(event);
+        if (xhr.status === 200) {
+          document.getElementById('contact_form').style.display = 'none';
+          document.getElementById('thankyou_message').style.display = 'block';
+        } else {
+          document.getElementById('form__error').innerHTML = 'Coś poszło nie tak :( <br /> Wyślij proszę e-mail na adres: <a href="mailto:waskowski.mikolaj@gmail.com">waskowski.mikolaj@gmail.com</a>. <br /> Dziękuję!';
+          document.getElementById('form__error').style.display = 'block';
+          console.log(xhr.responseText);
+        }
+      };
+      // url encode form data for sending as post data
+      var encoded = Object.keys(data).map(function(key) {
+        return encodeURIComponent(key) + '=' + encodeURIComponent(data[key]);
+      }).join('&');
+
+      xhr.send(encoded);
+    }
+  }
+
+  /**
+  * Runs while document is loaded...
+  */
+  function loaded() {
+    // prevent default submit form action, redirect to handleFormSubmit()
+    var form = document.getElementById('contact_form');
+    form.addEventListener('submit', handleFormSubmit, false);
+    console.log('Info: form submit function loaded');
+  }
+  document.addEventListener('DOMContentLoaded', loaded, false);
 })();

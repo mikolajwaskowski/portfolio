@@ -1,16 +1,16 @@
 /**
- * 
+ *
  *  Global styles
  *
  */
 @import 'variables';
 
 html, body {
-  background: #777;
+  background: #fff;
   font-family: $font-signika;
   font-size: $fz-normal;
   font-weight: $fw-light;
-  color: $fc-primary;
+  color: $fc-body;
   line-height: $lh-16;
 }
 
@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5 {
 	font-weight: $fw-light;
 }
 h1 { font-size: $fz-h1; }
+h2 { font-size: $fz-h2; }
+h3 { font-size: $fz-h3; }
+h4 { font-size: $fz-h4; }
+h5 { font-size: $fz-h5; }
 
 p {
   padding: $paragraph-padding;
