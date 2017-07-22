@@ -108,7 +108,7 @@
   function formLoading(event) {
     // make visual change for loading state
     event.target.children.contact_form__submit.disabled = true;
-    event.target.children.contact_form__submit.value = 'Wysyłanie...';
+    event.target.children.contact_form__submit.innerHTML = 'Wysyłanie...';
     event.target.children.contact_form__submit.className += ' button--loading';
     document.getElementById('form__error').style.display = 'none';
 
@@ -122,7 +122,7 @@
   function formLoadingReset(event) {
     // make visual change for loading state
     event.target.children.contact_form__submit.disabled = false;
-    event.target.children.contact_form__submit.value = 'Wyślij';
+    event.target.children.contact_form__submit.innerHTML = 'Wyślij';
     event.target.children.contact_form__submit.className = 'button button--primary';
 
     return false;

@@ -43,7 +43,7 @@ $lh-16: 1.6;
 
 $paragraph-padding: 0 0 1rem 0;
 $button-padding: 0.7rem 1.3rem;
-$button-no-padding: 0.5rem 0.6rem;
+$button-no-padding: 0.5rem 0.7rem 0.7rem;
 
 /*
 *
@@ -55,6 +55,8 @@ $brand-secondary: #666;
 $color-green: #2dce00;
 $color-red: #f30000;
 $brand-secondary-lighten: lighten(#666, 40%);
+
+$button-color-text: #fff;
 
 
 

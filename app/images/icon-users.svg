@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="31px" viewBox="0 0 38 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-users</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-359.000000, -1955.000000)" stroke="#000000" stroke-width="2">
+            <g id="experience" transform="translate(127.000000, 1625.000000)">
+                <g id="icons">
+                    <g id="users" transform="translate(233.000000, 331.000000)">
+                        <path d="M25.6531185,28.8597583 L25.6531185,25.6531185 C25.6531185,22.1111619 22.7817954,19.2398389 19.2398389,19.2398389 L6.41327962,19.2398389 C2.87132309,19.2398389 3.56008535e-16,22.1111619 0,25.6531185 L0,28.8597583" id="Shape"></path>
+                        <circle id="Oval" cx="12.8265592" cy="6.41327962" r="6.41327962"></circle>
+                        <path d="M35.2730379,28.8597583 L35.2730379,25.6531185 C35.2708579,22.7304551 33.2929359,20.1789357 30.4630782,19.4482704" id="Shape"></path>
+                        <path d="M24.0497986,0.208431588 C26.8875382,0.935007728 28.8723335,3.49201656 28.8723335,6.42129622 C28.8723335,9.35057588 26.8875382,11.9075847 24.0497986,12.6341608" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

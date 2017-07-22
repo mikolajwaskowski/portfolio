@@ -12,6 +12,8 @@ html, body {
   font-weight: $fw-light;
   color: $fc-body;
   line-height: $lh-16;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5 {

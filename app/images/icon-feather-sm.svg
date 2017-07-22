@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="64px" viewBox="0 0 63 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-2feather</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-214.000000, -1624.000000)" stroke="#000000" stroke-width="2">
+            <g id="experience" transform="translate(127.000000, 1625.000000)">
+                <g id="icons">
+                    <g id="feather" transform="translate(88.000000, 0.000000)">
+                        <path d="M55.040525,31.6880275 C62.1150695,24.6134831 62.1150695,13.1433802 55.040525,6.06883579 C47.9659806,-1.00570866 36.4958777,-1.00570866 29.4213333,6.06883579 L9.05271794,26.4374511 L9.05271794,52.0868186 L34.7020854,52.0868186 L55.040525,31.6880275 Z" id="Shape"></path>
+                        <path d="M42.246017,18.8935195 L0,61.1395366" id="Shape"></path>
+                        <path d="M45.2635897,40.016528 L21.1230085,40.016528" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

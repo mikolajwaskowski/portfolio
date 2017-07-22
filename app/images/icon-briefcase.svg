@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="79px" height="71px" viewBox="0 0 79 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-briefcase</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-280.000000, -1768.000000)" stroke="#000000" stroke-width="2">
+            <g id="experience" transform="translate(127.000000, 1625.000000)">
+                <g id="icons">
+                    <g id="briefcase" transform="translate(154.000000, 144.000000)">
+                        <rect id="Rectangle-path" x="0" y="15.2586076" width="76.2930381" height="53.4051267" rx="2"></rect>
+                        <path d="M53.4051267,68.6637343 L53.4051267,7.62930381 C53.4051267,3.41575566 49.989371,0 45.7758229,0 L30.5172152,0 C26.3036671,0 22.8879114,3.41575566 22.8879114,7.62930381 L22.8879114,68.6637343" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

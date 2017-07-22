@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="63px" viewBox="0 0 65 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-check-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-1150.000000, -1057.000000)" stroke="#000000" stroke-width="2">
+            <g id="who-am-i" transform="translate(123.000000, 1058.000000)">
+                <g id="icons" transform="translate(773.000000, 0.000000)">
+                    <g id="check-circle" transform="translate(255.000000, 0.439002)">
+                        <path d="M59.7157267,27.2645662 L59.7157267,30.0413474 C59.7081662,43.2644572 51.0040799,54.9076119 38.3236199,58.656828 C25.6431598,62.4060441 12.0070219,57.368196 4.80996768,46.2752658 C-2.38708654,35.1823357 -1.43059938,20.6768436 7.16073432,10.6249943 C15.752068,0.573145052 29.9316501,-2.63054405 42.0100138,2.75126033" id="Shape"></path>
+                        <polyline id="Shape" points="62.7015131 3.16927041 29.8578634 36.0129201 20.9005044 27.0555611"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

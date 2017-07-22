@@ -16,11 +16,12 @@
   background-color: transparent;
   border: 0;
   font-size: $fz-small;
+  font-weight: $fw-light;
   padding: 0.6rem 19px;
   box-sizing: border-box;
   border-left: 1px solid $brand-primary;
   color: rgba(255,255,255,0.8);
-  margin: 0.6rem 0;
+  margin: 0.8rem 0;
   outline: none;
   max-height: 260px;
   max-width: 560px;
@@ -29,8 +30,8 @@
 .contact-form__input:hover, .contact-form__input:focus {
   transition: all 0.1s;
   box-sizing: border-box;
-  padding: 0.6rem 16px;
-  border-left: 4px solid $brand-primary;
+  padding: 0.6rem 17px;
+  border-left: 3px solid $brand-primary;
   background: rgba(255,255,255,0.05);
 }
 

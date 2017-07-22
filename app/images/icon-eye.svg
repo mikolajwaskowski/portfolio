@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="36px" viewBox="0 0 48 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-eye</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-126.000000, -1778.000000)" stroke="#000000" stroke-width="2">
+            <g id="experience" transform="translate(127.000000, 1625.000000)">
+                <g id="icons">
+                    <g id="eye" transform="translate(0.000000, 154.418707)">
+                        <path d="M0,16.4209563 C0,16.4209563 8.21047814,0 22.5788149,0 C36.9471516,0 45.1576298,16.4209563 45.1576298,16.4209563 C45.1576298,16.4209563 36.9471516,32.8419126 22.5788149,32.8419126 C8.21047814,32.8419126 0,16.4209563 0,16.4209563 Z" id="Shape"></path>
+                        <circle id="Oval" cx="22.5788149" cy="16.4209563" r="6.1578586"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

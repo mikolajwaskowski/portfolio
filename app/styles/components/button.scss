@@ -12,6 +12,7 @@
   color: #fff;
   line-height: 1;
   font-size: $fz-small;
+  font-weight: $fw-normal;
 }
 
 .button--primary {
@@ -33,7 +34,8 @@
   background-color: transparent;
   border: 0;
   color: inherit;
-  font-weight: $fw-medium;
+  font-weight: $fw-light;
+  padding: $button-no-padding;
 }
 .button--text.button--green {
   color: $color-green;
@@ -44,6 +46,13 @@
   max-height: 18px;
   margin-bottom: -3px;
   margin-left: 10px;
+}
+
+.button__icon--left {
+  max-width: 26px;
+  max-height: 26px;
+  margin-bottom: -7px;
+  margin-right: 5px;
 }
 
 .button__icon--dimmed {
@@ -69,4 +78,30 @@
 
 .button + .button {
   margin-left: 16px
+}
+
+
+/*
+ *
+ * Button action effects
+ *
+*/
+.button {
+  &:hover {
+    background: darken($brand-secondary-lighten, 6%);
+  }
+  &.button--primary:hover {
+    background: darken($brand-primary, 6%);
+  }
+  &.button--green:hover {
+    background: darken($color-green, 3%);
+  }
+  &.button--outline:hover {
+    background: rgba(0,0,0,.04);
+  }
+  &.button--text:hover {
+    background: transparent;
+    padding-left: 1rem;
+  }
+  transition: all 0.16s ease-in;
 }

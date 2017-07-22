@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.62">
+        <g id="Artboard" stroke-width="2" stroke="#FFFFFF">
+            <g id="icon-arrow-right" transform="translate(0.000000, 3.000000)">
+                <g id="Page-1">
+                    <g id="Desktop-HD">
+                        <g id="contact">
+                            <g id="form">
+                                <g id="btn">
+                                    <g id="arrow-right">
+                                        <path d="M0,6 L16,6" id="Shape"></path>
+                                        <polyline id="Shape" points="10 0 16 6 10 12"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

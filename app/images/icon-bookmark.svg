@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="41px" viewBox="0 0 34 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-bookmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-HD" transform="translate(-178.000000, -1907.000000)" stroke="#000000" stroke-width="2">
+            <g id="experience" transform="translate(127.000000, 1625.000000)">
+                <g id="icons">
+                    <g id="bookmark" transform="translate(68.307676, 302.772275) rotate(-8.000000) translate(-68.307676, -302.772275) translate(54.307676, 284.772275)">
+                        <path d="M27.2361728,35.0747008 L13.6180864,25.3317284 L0,35.0747008 L0,3.89718898 C0,1.74483094 1.74200713,0 3.89088183,0 L23.345291,0 C25.4941657,0 27.2361728,1.74483094 27.2361728,3.89718898 L27.2361728,35.0747008 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

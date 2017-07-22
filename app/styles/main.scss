@@ -21,16 +21,15 @@ will be correctly compiled during `gulp serve` and `gulp`
 
  /* Reset browser styles */
 @import 'reset';
-
-/* Theme variables */
-/* @import 'variables'; */
-
 /* Theme base - default and global values */
 @import 'base';
+
+/* Basic components */
 @import 'components/button';
 @import 'components/image';
+@import 'components/icons';
 
-/* Components */
+/* Composite components */
 @import 'components/section';
 @import 'components/menu';
 @import 'components/contact_form';
