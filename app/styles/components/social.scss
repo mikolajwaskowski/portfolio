@@ -1,0 +1,81 @@
+/**
+*
+* Section Component Styles
+*
+*/
+@import '../variables';
+
+.social {
+	display: block;
+	margin-bottom: 16px;
+}
+.social a {
+	text-decoration: none;
+}
+
+.social__item {
+	display: inline-block;
+	position: relative;
+	margin: $social-height*1.6 1rem 0;
+	font-size: $fz-small;
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+	opacity: .33;
+}
+
+.social__icon {
+	display: block;
+	margin: 0 auto;
+}
+
+.social__item--github:before, .social__item--facebook:before, .social__item--twitter:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: -$social-height*1.6;
+	margin-left: -($social-width/2);
+	box-sizing: border-box;
+	width: $social-width;
+	height: $social-height;
+	background-color: #fff;
+	text-align: center;
+	color: $fc-body;
+	font-weight: $fw-light;
+	line-height: $social-height;
+}
+
+.social__item--github:after, .social__item--facebook:after, .social__item--twitter:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: -$social-height*0.6;
+	width: 3px;
+	height: 13px;
+	background-color: #fff;
+}
+
+.social__item--github:before {
+	content: 'Github';
+}
+.social__item--facebook:before {
+	content: 'Facebook';
+}
+.social__item--twitter:before {
+	content: 'Twitter';
+}
+
+.social__item:before, .social__item:after {
+	transform: translate(-($social-width/2.6), $social-height/2) rotate(-30deg);
+	opacity: 0;
+}
+
+.social__item:hover {
+	overflow: visible;
+	opacity: .8;
+}
+.social__item:hover:before, .social__item:hover:after {
+	transform: translate(0) rotate(0);
+	opacity: 1;
+	transition: all 0.3s;
+}

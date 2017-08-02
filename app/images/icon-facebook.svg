@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="21px" height="39px" viewBox="0 0 21 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-facebook</title>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-Artboard</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.33" stroke-linejoin="round">
-        <g id="Desktop-HD" transform="translate(-712.000000, -4551.000000)" stroke="#FFFFFF" stroke-width="2">
-            <g id="contact" transform="translate(0.000000, 3730.000000)">
-                <g id="social" transform="translate(586.000000, 759.000000)">
-                    <g id="facebook" transform="translate(127.676373, 63.000000)">
-                        <path d="M17.5231617,0 L12.7441176,0 C8.34512895,8.05620843e-16 4.77904409,4.06099416 4.77904409,9.07048432 L4.77904409,14.5127749 L0,14.5127749 L0,21.7691624 L4.77904409,21.7691624 L4.77904409,36.2819373 L11.1511029,36.2819373 L11.1511029,21.7691624 L15.930147,21.7691624 L17.5231617,14.5127749 L11.1511029,14.5127749 L11.1511029,9.07048432 C11.1511029,8.06858629 11.8643198,7.25638746 12.7441176,7.25638746 L17.5231617,7.25638746 L17.5231617,0 Z" id="Shape"></path>
-                    </g>
-                </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" stroke="#FFFFFF" stroke-width="2">
+            <g id="facebook" transform="translate(14.000000, 4.000000)">
+                <path d="M17.5231617,0 L12.7441176,0 C8.34512895,8.05620843e-16 4.77904409,4.06099416 4.77904409,9.07048432 L4.77904409,14.5127749 L0,14.5127749 L0,21.7691624 L4.77904409,21.7691624 L4.77904409,36.2819373 L11.1511029,36.2819373 L11.1511029,21.7691624 L15.930147,21.7691624 L17.5231617,14.5127749 L11.1511029,14.5127749 L11.1511029,9.07048432 C11.1511029,8.06858629 11.8643198,7.25638746 12.7441176,7.25638746 L17.5231617,7.25638746 L17.5231617,0 Z" id="Shape"></path>
             </g>
         </g>
     </g>

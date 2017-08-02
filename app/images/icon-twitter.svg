@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="37px" height="31px" viewBox="0 0 37 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-twitter</title>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-Artboard</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.33" stroke-linejoin="round">
-        <g id="Desktop-HD" transform="translate(-781.000000, -4554.000000)" stroke="#FFFFFF" stroke-width="2">
-            <g id="contact" transform="translate(0.000000, 3730.000000)">
-                <g id="social" transform="translate(586.000000, 759.000000)">
-                    <g id="twitter" transform="translate(196.000000, 65.000000)">
-                        <path d="M35,1.00604083 C33.4787047,2.07912407 31.7943174,2.89986057 30.0117038,3.43664374 C28.0519064,1.18323305 24.8937278,0.393011504 22.1036364,1.45793191 C19.3135449,2.52285231 17.4850441,5.21638658 17.5250772,8.20253178 L17.5250772,9.79116113 C11.8547266,9.93819258 6.48732067,7.23659829 3.22741304,2.59467018 C3.22741304,2.59467018 -3.12710435,16.8923343 11.1705598,23.2468517 C7.89882143,25.467702 4.00132481,26.5812725 0.0501543438,26.4241104 C14.3478185,34.3672571 31.8227413,26.4241104 31.8227413,8.1548729 C31.8212784,7.71236597 31.7787323,7.27095063 31.695651,6.83631054 C33.3170111,5.23734411 34.4611805,3.21854524 35,1.00604083 Z" id="Shape"></path>
-                    </g>
-                </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard" stroke="#FFFFFF" stroke-width="2">
+            <g id="twitter" transform="translate(5.000000, 8.000000)">
+                <path d="M35,1.00604083 C33.4787047,2.07912407 31.7943174,2.89986057 30.0117038,3.43664374 C28.0519064,1.18323305 24.8937278,0.393011504 22.1036364,1.45793191 C19.3135449,2.52285231 17.4850441,5.21638658 17.5250772,8.20253178 L17.5250772,9.79116113 C11.8547266,9.93819258 6.48732067,7.23659829 3.22741304,2.59467018 C3.22741304,2.59467018 -3.12710435,16.8923343 11.1705598,23.2468517 C7.89882143,25.467702 4.00132481,26.5812725 0.0501543438,26.4241104 C14.3478185,34.3672571 31.8227413,26.4241104 31.8227413,8.1548729 C31.8212784,7.71236597 31.7787323,7.27095063 31.695651,6.83631054 C33.3170111,5.23734411 34.4611805,3.21854524 35,1.00604083 Z" id="Shape"></path>
             </g>
         </g>
     </g>
