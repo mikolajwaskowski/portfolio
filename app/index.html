@@ -42,7 +42,7 @@
   <header class="background background--header">
     <div class="container">
       <menu class="menu">
-        <button class="button button--outline menu__trigger">MENU</button>
+        <button id="menu-button" class="button button--outline menu__trigger">MENU</button>
         <div class="menu__brand">Mikołaj Waśkowski <small>Front-End designer</small></div>
       </menu>
       <div class="section">
@@ -50,12 +50,13 @@
           [image]
         </div>
         <div class="section__text">
-          <h1 class="section__title">Header!</h1>
+          <h1 class="section__title">Cześć!</h1>
           <p>
-            Elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
+            Jestem Mikołaj Waśkowski i erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
           </p>
           <p>
-            Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa place. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
+            Minimalizm i czysta forma. podejscie User-Centered Design. Zainteresowania UX
+            <!-- http://uxdesign.pl/design-thinking-user-centered-design/ -->
           </p>
           <button class="button button--primary">Portfolio <img src="./images/icon-arrow-down.svg" alt="" class="button__icon" /></button>
           <button class="button button--primary button--outline">Blog <img src="./images/icon-external-link.svg" alt="" class="button__icon button__icon--dimmed" /></button>
@@ -78,15 +79,13 @@
       </div>
     </div>
     <div class="section__text">
-      <h2 class="section__title">Header!</h2>
+      <h2 class="section__title">Kim jestem?</h2>
       <p>
         Elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
       </p>
       <p>
         Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa place. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
       </p>
-      <button class="button button--primary">Button 1</button>
-      <button class="button button--primary button--outline">Button 2</button>
     </div>
   </section>
 
@@ -104,15 +103,13 @@
       </div>
     </div>
     <div class="section__text">
-      <h2 class="section__title">Header!</h2>
+      <h2 class="section__title">Co portafię?</h2>
       <p>
         Elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
       </p>
       <p>
         Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa place. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
       </p>
-      <button class="button button--primary">Button 1</button>
-      <button class="button button--primary button--outline">Button 2</button>
     </div>
   </section>
 
@@ -130,15 +127,13 @@
       </div>
     </div>
     <div class="section__text">
-      <h2 class="section__title">Header!</h2>
+      <h2 class="section__title">Portfolio</h2>
       <p>
-        Elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio rem sapiente distinctio quis consequatur illo excepturi pariatur rerum fuga quam dolor culpa nihil facere, nemo, assumenda aliquam veritatis, sit quas.
       </p>
       <p>
         Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa place. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
       </p>
-      <button class="button button--primary">Button 1</button>
-      <button class="button button--primary button--outline">Button 2</button>
     </div>
   </section>
 
@@ -195,7 +190,7 @@
 
   <!-- Contact section -->
   <section class="background background--dark">
-    <div class="container section section--dark section--copyrights">
+    <div class="container section section--dark">
       <div class="section__media">
         <div class="menu__brand">Mikołaj Waśkowski <small>Front-End designer</small></div>
         <img src="./images/profile.jpg" alt="Mikolaj Waskowski avatar" class="image image--centered image--circular image--avatar">
@@ -244,6 +239,24 @@
       </div>
     </div>
   </section>
+
+  <div id="overlay" class="menu-overlay">
+    <button id="menu-button-close" class="button button--outline menu__trigger menu-overlay__close-btn">ZAMKNIJ</button>
+    <nav class="menu-overlay__nav">
+      <ul>
+        <li class="menu-overlay__item"><a href="#">Start</a></li>
+        <li class="menu-overlay__item"><a href="#">Kim jestem</a></li>
+        <li class="menu-overlay__item"><a href="#">Co potrafię</a></li>
+        <li class="menu-overlay__item"><a href="#">Portfolio</a></li>
+        <li class="menu-overlay__item"><a href="#">Kontakt</a></li>
+        <li class="menu-overlay__item menu-overlay__item--social">
+          <a href="#" title="Github"><img src="./images/icon-github-dark.svg" alt="" class="social__icon" /></a>
+          <a href="#" title="Facebook"><img src="./images/icon-facebook-dark.svg" alt="" class="social__icon" /></a>
+          <a href="#" title="Twitter"><img src="./images/icon-twitter-dark.svg" alt="" class="social__icon" /></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
 
 

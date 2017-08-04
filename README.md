@@ -1,7 +1,7 @@
 # Portfolio
-> Place, where You can see what I can do for You :)
+> This is the place where You can see what I can do for You :)
 
-Link to live version: [mwaskowski.pl/portfolio](#)
+Link to the live version: [mwaskowski.pl/portfolio](#)
 
 ![](screenshot.png)
 
@@ -21,12 +21,12 @@ npm install
 gulp serve
 ```
 
-## Built With
+## Built with
 
 * [Google Web Starter Kit](https://github.com/google/web-starter-kit)
 
 
-## Release History
+## Release history
 * 0.2
     * -First change-
 * 0.1
@@ -37,6 +37,6 @@ gulp serve
 
 Mikolaj Waskowski &copy; 2017
 
-Facebook: [@waskowski.mikolaj](https://www.facebook.com/waskowski.mikolaj) 
-Twitter: [@waskowskim](https://twitter.com/waskowskim) 
-Blog (Polish): [mwaskowski.pl](http://mwaskowski.pl/)
+Blog (Polish): [mwaskowski.pl](http://mwaskowski.pl/)  
+Facebook: [@waskowski.mikolaj](https://www.facebook.com/waskowski.mikolaj)  
+Twitter: [@waskowskim](https://twitter.com/waskowskim)  

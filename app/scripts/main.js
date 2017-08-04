@@ -192,12 +192,28 @@
   }
 
   /**
+  * Activating overlay menu
+  */
+  function menuTrigger() {
+    var overlay = document.getElementById('overlay');
+    overlay.classList.toggle('menu-overlay--open');
+  }
+
+  /**
   * Runs while document is loaded...
   */
   function loaded() {
     // prevent default submit form action, redirect to handleFormSubmit()
     var form = document.getElementById('contact_form');
     form.addEventListener('submit', handleFormSubmit, false);
+
+    // make menu buttons live - toggle overlaying menu
+    var menuBtn = document.getElementById('menu-button');
+    menuBtn.addEventListener('click', menuTrigger, false);
+    var menuBtnClose = document.getElementById('menu-button-close');
+    menuBtnClose.addEventListener('click', menuTrigger, false);
+
+    console.log('Info: menu trigger function loaded');
     console.log('Info: form submit function loaded');
   }
   document.addEventListener('DOMContentLoaded', loaded, false);

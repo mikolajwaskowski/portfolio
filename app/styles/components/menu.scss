@@ -43,4 +43,103 @@
   &:hover {
     opacity: 0.62;
   }
+
+  &.menu-overlay__close-btn {
+    opacity: 0.4;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+  }
+  // active overlay menu icon: X
+  &.menu-overlay__close-btn:after {
+    background: url('../images/icon-menu-close.svg') no-repeat 0 0;
+    background-size: 18px 13px;
+  }
+}
+
+/*
+* Menu trigger classes
+*/
+
+.menu-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,0.92);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s, visibility 0s 0.5s;
+}
+
+.menu-overlay--open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s;
+  .menu-overlay__nav {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  .menu-overlay__item {
+    transform: translateY(0);
+  }
+}
+
+.menu-overlay__nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  perspective: 1200px;
+  transform: translateY(-15%) rotateX(15deg);
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.menu-overlay__item {
+  list-style-type: none;
+  padding: 0;
+  margin: 1.2rem 0;
+  transform: translateY(-20px);
+  transition: transform 0.3s;
+}
+
+@for $i from 1 to 7 {
+  .menu-overlay__item:nth-child(#{$i}) { 
+    transition: transform 0.3s $i * 0.03s;
+  }
+}
+
+.menu-overlay__item:not(.menu-overlay__item--social) a {
+  display: inline-block;
+  padding: 2px 1rem;
+  font-size: $fz-xlarge;
+  text-decoration: none;
+  color: $brand-primary;
+  background-color: transparent;
+}
+
+.menu-overlay__item:not(.menu-overlay__item--social) a:hover {
+  background-color: $brand-primary;
+  color: #fff;
+}
+
+.menu-overlay__item--social {
+  margin-top: 4rem;
+}
+.menu-overlay__item--social a {
+  display: inline-block; 
+  margin: 0 1rem;
+  opacity: .16;
+  &:hover {
+    opacity: 0.62;
+    transition: opacity 0.16s;
+  }
 }
