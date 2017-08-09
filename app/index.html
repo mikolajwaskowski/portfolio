@@ -39,11 +39,11 @@
   <body>
 
   <!-- Header Section -->
-  <header class="background background--header">
+  <header id="start" class="background background--header">
     <div class="container">
       <menu class="menu">
         <button id="menu-button" class="button button--outline menu__trigger">MENU</button>
-        <div class="menu__brand">Mikołaj Waśkowski <small>Front-End designer</small></div>
+        <div class="menu__brand">Mikołaj Waśkowski <small>Front-end designer</small></div>
       </menu>
       <div class="section">
         <div class="section__media">
@@ -66,7 +66,7 @@
   </header>
 
   <!-- Section 1 -->
-  <section class="container section section--left">
+  <section id="kim_jestem" class="container section section--left">
     <div class="section__media">
       <div class="icon-set">
         <div class="icon-set__icon icon-set__icon--tl"><img src="./images/icon-cpu.svg" alt=""></div>
@@ -90,7 +90,7 @@
   </section>
 
   <!-- Section 2 -->
-  <section class="container section">
+  <section id="co_potrafie" class="container section">
     <div class="section__media">
       <div class="icon-set">
         <div class="icon-set__icon icon-set__icon--tl icon-set__icon--feather-sm"><img src="./images/icon-feather-sm.svg" alt=""></div>
@@ -114,7 +114,7 @@
   </section>
 
   <!-- Section 3 -->
-  <section class="container section section--left">
+  <section id="portfolio" class="container section section--left">
     <div class="section__media">
       <div class="icon-set">
         <div class="icon-set__icon icon-set__icon--tl"><img src="./images/icon-chevron-down.svg" alt=""></div>
@@ -189,10 +189,10 @@
   </section>
 
   <!-- Contact section -->
-  <section class="background background--dark">
+  <section id="kontakt" class="background background--dark">
     <div class="container section section--dark">
       <div class="section__media">
-        <div class="menu__brand">Mikołaj Waśkowski <small>Front-End designer</small></div>
+        <div class="menu__brand">Mikołaj Waśkowski <small>Front-end designer</small></div>
         <img src="./images/profile.jpg" alt="Mikolaj Waskowski avatar" class="image image--centered image--circular image--avatar">
         <p class="image--avatar-description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia esse, saepe dolorem deleniti, illum pariatur aut voluptate, necessitatibus magnam itaque eius? Vero officiis magni ea ut repellat ad delectus fuga.
@@ -244,11 +244,10 @@
     <button id="menu-button-close" class="button button--outline menu__trigger menu-overlay__close-btn">ZAMKNIJ</button>
     <nav class="menu-overlay__nav">
       <ul>
-        <li class="menu-overlay__item"><a href="#">Start</a></li>
-        <li class="menu-overlay__item"><a href="#">Kim jestem</a></li>
-        <li class="menu-overlay__item"><a href="#">Co potrafię</a></li>
-        <li class="menu-overlay__item"><a href="#">Portfolio</a></li>
-        <li class="menu-overlay__item"><a href="#">Kontakt</a></li>
+        <li class="menu-overlay__item"><a class="menu-link" linkto="kim_jestem">Kim jestem</a></li>
+        <li class="menu-overlay__item"><a class="menu-link" linkto="co_potrafie">Co potrafię</a></li>
+        <li class="menu-overlay__item"><a class="menu-link" linkto="portfolio">Portfolio</a></li>
+        <li class="menu-overlay__item"><a class="menu-link" linkto="kontakt">Kontakt</a></li>
         <li class="menu-overlay__item menu-overlay__item--social">
           <a href="#" title="Github"><img src="./images/icon-github-dark.svg" alt="" class="social__icon" /></a>
           <a href="#" title="Facebook"><img src="./images/icon-facebook-dark.svg" alt="" class="social__icon" /></a>

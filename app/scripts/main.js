@@ -200,6 +200,17 @@
   }
 
   /**
+  * Scrolls to element
+  * @param {Object} event DOM event
+  */
+  function scrollTo(event) {
+    document.getElementById(event.target.getAttribute('linkto')).scrollIntoView({
+      behavior: 'smooth'
+    });
+    menuTrigger();
+  }
+
+  /**
   * Runs while document is loaded...
   */
   function loaded() {
@@ -213,7 +224,12 @@
     var menuBtnClose = document.getElementById('menu-button-close');
     menuBtnClose.addEventListener('click', menuTrigger, false);
 
-    console.log('Info: menu trigger function loaded');
+    var menuLinks = document.getElementsByClassName('menu-link');
+    for (var i = 0; i < menuLinks.length; i++) {
+      menuLinks[i].addEventListener('click', scrollTo, false);
+    }
+
+    console.log('Info: menu trigger functions loaded');
     console.log('Info: form submit function loaded');
   }
   document.addEventListener('DOMContentLoaded', loaded, false);
