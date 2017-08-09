@@ -5,6 +5,48 @@
 */
 @import '../variables';
 
+/* Styles for views changing - from basic to portfolio single item, witch animation */ 
+.view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.screen {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  /* let the browser know we plan to animate each view in and out */
+  will-change: transform;
+  overflow: scroll;
+  transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+/* styles for main screen - website content */
+.screen--basic {
+  height: 100vh;
+}
+.view--change .screen--basic {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* styles for single portfolio item */
+.screen--portfolio-item {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  height: 100vh;
+}
+.view--change .screen--portfolio-item {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+/* end of views changing */
+
 .container {
 	width: 100%;
 	max-width: 1440px;

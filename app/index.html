@@ -36,8 +36,11 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
   </head>
+
   <body>
 
+<div class="view">
+<div class="screen screen--basic">
   <!-- Header Section -->
   <header id="start" class="background background--header">
     <div class="container">
@@ -58,7 +61,7 @@
             Minimalizm i czysta forma. podejscie User-Centered Design. Zainteresowania UX
             <!-- http://uxdesign.pl/design-thinking-user-centered-design/ -->
           </p>
-          <button class="button button--primary">Portfolio <img src="./images/icon-arrow-down.svg" alt="" class="button__icon" /></button>
+          <button class="button button--primary internal-link" data-goto="portfolio">Portfolio <img src="./images/icon-arrow-down.svg" alt="" class="button__icon" /></button>
           <button class="button button--primary button--outline">Blog <img src="./images/icon-external-link.svg" alt="" class="button__icon button__icon--dimmed" /></button>
         </div>
       </div>
@@ -150,7 +153,7 @@
       <p>
         Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa place. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
       </p>
-      <button class="button button--text button--green"><img src="./images/icon-info.svg" alt="" class="button__icon--left" /> Show more</button>
+      <button class="button button--text button--green button--show-more" data-itemid="1"><img src="./images/icon-info.svg" alt="" class="button__icon--left" /> Show more</button>
     </div>
   </section>
 
@@ -167,7 +170,7 @@
       <p>
         Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa place. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
       </p>
-      <button class="button button--text button--green"><img src="./images/icon-info.svg" alt="" class="button__icon--left" /> Show more</button>
+      <button class="button button--text button--green button--show-more" data-itemid="2"><img src="./images/icon-info.svg" alt="" class="button__icon--left" /> Show more</button>
     </div>
   </section>
 
@@ -184,7 +187,7 @@
       <p>
         Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa place. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.
       </p>
-      <button class="button button--text button--green"><img src="./images/icon-info.svg" alt="" class="button__icon--left" /> Show more</button>
+      <button class="button button--text button--green button--show-more" data-itemid="3"><img src="./images/icon-info.svg" alt="" class="button__icon--left" /> Show more</button>
     </div>
   </section>
 
@@ -239,15 +242,38 @@
       </div>
     </div>
   </section>
+</div> <!-- /screen basic -->
 
+  <!-- screen portfolio-item -->
+  <div class="screen screen--portfolio-item">
+    <aside class="container">
+      <button class="button button--text button--back"><img src="./images/icon-info.svg" alt="" class="button__icon--left" /> Wróć</button>
+      <h1 class="portfolio__item-name">Błąd podczas wczytywania...</h1>
+      <div>
+        <p>Description.</p>
+        <div style="width: 100%; height: 600px; background-color: #444;">&nbsp;</div>
+        <h3>Użyte narzędzia:</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium qui rem enim delectus voluptatibus nihil quasi vero maiores veritatis cupiditate quas reprehenderit doloremque ullam possimus molestias error, alias voluptates. Tenetur.
+        </p>
+        <h3>Zobacz wersję live:</h3>
+        <button class="button button--primary">Zobacz</button> <br><br>
+        <button class="button button--text button--back"><img src="./images/icon-info.svg" alt="" class="button__icon--left" /> Wróc</button>
+      </div>
+    </aside>
+  </div>
+
+</div> <!-- /view -->
+
+<!-- menu overlay -->
   <div id="overlay" class="menu-overlay">
     <button id="menu-button-close" class="button button--outline menu__trigger menu-overlay__close-btn">ZAMKNIJ</button>
     <nav class="menu-overlay__nav">
       <ul>
-        <li class="menu-overlay__item"><a class="menu-link" linkto="kim_jestem">Kim jestem</a></li>
-        <li class="menu-overlay__item"><a class="menu-link" linkto="co_potrafie">Co potrafię</a></li>
-        <li class="menu-overlay__item"><a class="menu-link" linkto="portfolio">Portfolio</a></li>
-        <li class="menu-overlay__item"><a class="menu-link" linkto="kontakt">Kontakt</a></li>
+        <li class="menu-overlay__item"><a class="internal-link" data-goto="kim_jestem">Kim jestem</a></li>
+        <li class="menu-overlay__item"><a class="internal-link" data-goto="co_potrafie">Co potrafię</a></li>
+        <li class="menu-overlay__item"><a class="internal-link" data-goto="portfolio">Portfolio</a></li>
+        <li class="menu-overlay__item"><a class="internal-link" data-goto="kontakt">Kontakt</a></li>
         <li class="menu-overlay__item menu-overlay__item--social">
           <a href="#" title="Github"><img src="./images/icon-github-dark.svg" alt="" class="social__icon" /></a>
           <a href="#" title="Facebook"><img src="./images/icon-facebook-dark.svg" alt="" class="social__icon" /></a>

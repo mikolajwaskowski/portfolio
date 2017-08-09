@@ -200,14 +200,53 @@
   }
 
   /**
-  * Scrolls to element
+  * Check that menu is opened (overlay is active)
+  * @return {boolean} Menu active?
+  */
+  function overlayActive() {
+    return document.getElementById('overlay').classList.contains('menu-overlay--open');
+  }
+
+  /**
+  * Scrolls to element, closing menu overlay if needed
   * @param {Object} event DOM event
   */
   function scrollTo(event) {
-    document.getElementById(event.target.getAttribute('linkto')).scrollIntoView({
+    // goto section marked as button data-goto attribute
+    document.getElementById(event.target.getAttribute('data-goto')).scrollIntoView({
       behavior: 'smooth'
     });
-    menuTrigger();
+    // need to close menu overlay?
+    if (overlayActive()) {
+      menuTrigger();
+    }
+  }
+
+  /**
+  * Make portfolio item alive
+  */
+  function viewChanger() {
+    var view = document.querySelector('.view');
+    var itemName = document.querySelector('.portfolio__item-name');
+    var backButton = document.querySelectorAll('.button--back');
+    var listItems = document.querySelectorAll('.button--show-more');
+
+    function onViewChange(evt) {
+      // change view - add "active" class to main view container
+      view.classList.toggle('view--change');
+      // change details data
+      if (evt.currentTarget.classList.contains('button--show-more')) {
+        itemName.textContent = evt.currentTarget.getAttribute('data-itemid');
+      }
+      evt.preventDefault();
+    }
+
+    for (var j = 0; j < listItems.length; j++) {
+      listItems[j].addEventListener('click', onViewChange, false);
+    }
+    for (var k = 0; k < backButton.length; k++) {
+      backButton[k].addEventListener('click', onViewChange, false);
+    }
   }
 
   /**
@@ -217,20 +256,21 @@
     // prevent default submit form action, redirect to handleFormSubmit()
     var form = document.getElementById('contact_form');
     form.addEventListener('submit', handleFormSubmit, false);
+    console.log('Info: form submit function loaded');
 
-    // make menu buttons live - toggle overlaying menu
+    // make internal buttons alive
     var menuBtn = document.getElementById('menu-button');
     menuBtn.addEventListener('click', menuTrigger, false);
     var menuBtnClose = document.getElementById('menu-button-close');
     menuBtnClose.addEventListener('click', menuTrigger, false);
-
-    var menuLinks = document.getElementsByClassName('menu-link');
+    var menuLinks = document.getElementsByClassName('internal-link');
     for (var i = 0; i < menuLinks.length; i++) {
       menuLinks[i].addEventListener('click', scrollTo, false);
     }
-
     console.log('Info: menu trigger functions loaded');
-    console.log('Info: form submit function loaded');
+
+    // make portoflio item alive
+    viewChanger();
   }
   document.addEventListener('DOMContentLoaded', loaded, false);
 })();
