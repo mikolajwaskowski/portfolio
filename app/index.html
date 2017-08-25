@@ -39,7 +39,7 @@
 
   <body>
 
-<div class="view">
+<div class="view view--change">
 <div class="screen screen--basic">
   <!-- Header Section -->
   <header id="start" class="background background--header">
@@ -246,19 +246,32 @@
 
   <!-- screen portfolio-item -->
   <div class="screen screen--portfolio-item">
-    <aside class="container">
-      <button class="button button--text button--back"><img src="./images/icon-info.svg" alt="" class="button__icon--left" /> Wróć</button>
-      <h1 class="portfolio__item-name">Błąd podczas wczytywania...</h1>
-      <div>
-        <p>Description.</p>
-        <div style="width: 100%; height: 600px; background-color: #444;">&nbsp;</div>
-        <h3>Użyte narzędzia:</h3>
+    <aside class="container container--portfolio-item">
+      <button class="button button--text button--back button--block"><img src="./images/icon-back.svg" alt="" class="button__icon--back" /> Wróć</button>
+      <div class="narrow_container">
+        <h1 class="portfolio__item-name">Błąd podczas wczytywania...</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed harum, nisi modi quisquam autem, aut impedit asperiores iste a eligendi. Minus dignissimos distinctio dolores, facere pariatur culpa quidem asperiores itaque id. Fugit velit corporis eligendi ullam quam, dolor ad.</p>
+        
+        <img src="./images/pi1.jpg" alt="portfolio_item" class="portfolio__image" />
+
+        <h3 class="portfolio__header">Użyte narzędzia:</h3>
+        <div class="tools">
+          <div class="tools_item">
+            <div class="tools__icon">
+              <img src="" alt="tool icon">
+            </div>
+            <div class="tools__description">
+              text
+            </div>
+          </div>
+        </div>
+
+        <h3 class="portfolio__header">Zobacz wersję live:</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium qui rem enim delectus voluptatibus nihil quasi vero maiores veritatis cupiditate quas reprehenderit doloremque ullam possimus molestias error, alias voluptates. Tenetur.
+          www.dsadasd.pl
         </p>
-        <h3>Zobacz wersję live:</h3>
-        <button class="button button--primary">Zobacz</button> <br><br>
-        <button class="button button--text button--back"><img src="./images/icon-info.svg" alt="" class="button__icon--left" /> Wróc</button>
+        <button class="button button--primary">Zobacz <img src="./images/icon-external-link-white.svg" alt="" class="button__icon" /> </button><br><br>
+        <button class="button button--text button--back"><img src="./images/icon-back.svg" alt="" class="button__icon--back" /> Wróć</button>
       </div>
     </aside>
   </div>

@@ -1,0 +1,28 @@
+/*
+*
+* Portfolio item styles
+*
+*/
+@import '../variables'; 
+
+.screen--portfolio-item {
+	text-align: center;
+}
+
+.container--portfolio-item {
+	padding-top: 2rem;
+	padding-bottom: 6rem;
+}
+
+.portfolio__header {
+	margin-top: 3rem;
+	margin-bottom: 0.6rem;
+}
+
+.portfolio__image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 1rem auto;
+	padding-bottom: 1rem;
+}
