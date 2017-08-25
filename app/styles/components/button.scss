@@ -6,6 +6,7 @@
 @import '../variables';
 
 .button {
+  display: inline-block;
 	padding: $button-padding;
   background-color: $brand-secondary-lighten;
   border: 1px solid $brand-secondary-lighten;
@@ -13,6 +14,7 @@
   line-height: 1;
   font-size: $fz-small;
   font-weight: $fw-normal;
+  text-decoration: none;
 }
 
 .button--primary {
@@ -68,6 +70,10 @@
 
 .button--block {
   display: block;
+}
+
+.button--live-at {
+  margin-bottom: 3rem;
 }
 
 .button--loading {

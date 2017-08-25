@@ -1,7 +1,7 @@
 # Portfolio
-> This is the place where You can see what I can do for You :)
+> I'm a Front-end developer and Web designer combination.  I'm currently creating my portfolio site, feel free send me feedback about it :)
 
-Link to the live version: [mwaskowski.pl/portfolio](#)
+You can watch it here: [mikolajwaskowski.github.io/portfolio](https://mikolajwaskowski.github.io/portfolio/)
 
 ![](screenshot.png)
 

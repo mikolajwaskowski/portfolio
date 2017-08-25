@@ -23,6 +23,18 @@
 	display: block;
 	max-width: 100%;
 	height: auto;
-	margin: 1rem auto;
+	margin: 1.6rem auto;
 	padding-bottom: 1rem;
+}
+
+.tools {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+.tools_item {
+	display: inline-block;
+	margin: 0.4rem 1.6rem 1rem;
+	font-size: $fz-small;
 }

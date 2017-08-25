@@ -72,7 +72,51 @@
     });
   }
 
-  // Custom JavaScript
+  /**
+  *
+  *
+  *
+  * Custom JavaScript
+  *
+  *
+  *
+  **/
+
+  var PORTFOLIO_ITEMS = [
+    {
+      name: 'test',
+      previewText: 'Elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.',
+      previewImage: './images/portfolio_items/1.jpg',
+      description: 'description',
+      images: ['./images/portfolio_items/1.jpg'],
+      tools: ['sketch', 'mailingHtml', 'spotify'],
+      liveAt: 'google.com'
+    },
+    {
+      name: 'test 2',
+      previewText: 'Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.',
+      previewImage: './images/portfolio_items/2.jpg',
+      description: 'description 2',
+      images: ['./images/portfolio_items/2.jpg', './images/portfolio_items/1.jpg'],
+      tools: ['sketch', 'mailingHtml'],
+      liveAt: 'facebook.com'
+    }
+  ];
+
+  var TOOLS = {
+    sketch: {
+      name: 'Sketch',
+      icon: './images/tool-sketch.png'
+    },
+    mailingHtml: {
+      name: 'E-mailing HTML',
+      icon: './images/tool-template.png'
+    },
+    spotify: {
+      name: 'Spotify',
+      icon: './images/tool-spotify.png'
+    }
+  };
 
   /**
   * Gets contact form input values
@@ -223,22 +267,85 @@
   }
 
   /**
-  * Make portfolio item alive
+  * Fill portfolio with Portfolio_items
+  * @param {Array} items - array of portfolio items
   */
+  function insertPortoflioItems(items) {
+    var container = document.getElementById('portfolio_items_container');
+    items.forEach(function(element, index) {
+      // create main container
+      var section = document.createElement('section');
+      section.className += ' container section section--left section--portfolio-item ';
+      // create box for item preview
+      var sectionMedia = document.createElement('div');
+      sectionMedia.className += ' section__media section__media--portfolio-item ';
+      sectionMedia.innerHTML = '<img src="' + element.previewImage + '" alt="portfolio_item" />';
+      // create box for item name and description
+      var sectionText = document.createElement('div');
+      sectionText.className += ' section__text section__text--portfolio-item ';
+      sectionText.innerHTML = '<h3 class="section__title">' + element.name + '</h3>';
+      sectionText.innerHTML += '<p>' + element.previewText + '</p>';
+      sectionText.innerHTML += '<button class="button button--text button--green button--show-more" data-itemid="' + index + '"><img src="./images/icon-info.svg" alt="" class="button__icon--left" /> Zobacz szczegóły</button>';
+      section.appendChild(sectionMedia);
+      section.appendChild(sectionText);
+      container.appendChild(section);
+    });
+  }
+
+  /**
+  * Fill portfolio item description with data
+  * @param {Number} itemId - id of portfolio item
+  */
+  function fillPortfolioItemDescription(itemId) {
+    var itemName = document.querySelector('.portfolio__item-name');
+    var itemDescrption = document.querySelector('.portfolio__item-description');
+    var imagesContainer = document.querySelector('.portfolio__images');
+    var toolsContainer = document.querySelector('.tools');
+    var liveAt = document.querySelector('.portfolio__live-at');
+    var externalLinkButton = document.querySelector('.button--live-at');
+
+    itemName.innerHTML = PORTFOLIO_ITEMS[itemId].name;
+    itemDescrption.innerHTML = PORTFOLIO_ITEMS[itemId].description;
+    // clear images container from old images
+    imagesContainer.innerHTML = '';
+    // fill images container with new images
+    PORTFOLIO_ITEMS[itemId].images.forEach(function(element, index) {
+      imagesContainer.innerHTML += '<img src="' + element + '" alt="' + PORTFOLIO_ITEMS[itemId].name + ' - #' + index + ' presentation image" class="portfolio__image" /> ';
+    });
+    toolsContainer.innerHTML = '';
+    PORTFOLIO_ITEMS[itemId].tools.forEach(function(element) {
+      toolsContainer.innerHTML += '<div class="tools_item"><img src="' + TOOLS[element].icon + '" alt="" class=""><p>' + TOOLS[element].name + '</p></div>';
+    });
+    liveAt.innerHTML = '<p>' + PORTFOLIO_ITEMS[itemId].liveAt + '</p>';
+    externalLinkButton.href = '//' + PORTFOLIO_ITEMS[itemId].liveAt;
+  }
+
+  /**
+  * Make portfolio item alive
+  **/
   function viewChanger() {
     var view = document.querySelector('.view');
-    var itemName = document.querySelector('.portfolio__item-name');
     var backButton = document.querySelectorAll('.button--back');
     var listItems = document.querySelectorAll('.button--show-more');
+    var portfolioDescriptionView = document.querySelector('.screen--portfolio-item');
 
+    /**
+    * While clicking "Show more", activate description view and fill it with data
+    * @param {Object} evt - button click event
+    **/
     function onViewChange(evt) {
-      // change view - add "active" class to main view container
-      view.classList.toggle('view--change');
+      evt.preventDefault();
       // change details data
       if (evt.currentTarget.classList.contains('button--show-more')) {
-        itemName.textContent = evt.currentTarget.getAttribute('data-itemid');
+        var portfolioItemId = evt.currentTarget.getAttribute('data-itemid');
+        fillPortfolioItemDescription(portfolioItemId);
       }
-      evt.preventDefault();
+      // change view - add "active" class to main view container
+      view.classList.toggle('view--change');
+      // go to the top of portfolio item description container while "show more" event
+      if (view.classList.contains('view--change')) {
+        portfolioDescriptionView.scrollTop = 0;
+      }
     }
 
     for (var j = 0; j < listItems.length; j++) {
@@ -268,6 +375,9 @@
       menuLinks[i].addEventListener('click', scrollTo, false);
     }
     console.log('Info: menu trigger functions loaded');
+
+    // create portfolio items
+    insertPortoflioItems(PORTFOLIO_ITEMS);
 
     // make portoflio item alive
     viewChanger();
