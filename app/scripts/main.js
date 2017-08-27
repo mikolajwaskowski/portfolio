@@ -279,7 +279,7 @@
       // create box for item preview
       var sectionMedia = document.createElement('div');
       sectionMedia.className += ' section__media section__media--portfolio-item ';
-      sectionMedia.innerHTML = '<img src="' + element.previewImage + '" alt="portfolio_item" />';
+      sectionMedia.innerHTML = '<img src="' + element.previewImage + '" alt="portfolio_item" class="button--show-more" data-itemid="' + index + '" />';
       // create box for item name and description
       var sectionText = document.createElement('div');
       sectionText.className += ' section__text section__text--portfolio-item ';

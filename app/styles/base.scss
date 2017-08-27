@@ -23,6 +23,9 @@ html, body {
 
 h1, h2, h3, h4, h5 {
 	font-weight: $fw-light;
+  line-height: 1.2;
+  margin-top: 3rem;
+  margin-bottom: 0.6rem;
 }
 h1 { font-size: $fz-h1; }
 h2 { font-size: $fz-h2; }
@@ -33,3 +36,18 @@ h5 { font-size: $fz-h5; }
 p {
   padding: $paragraph-padding;
 }
+
+
+/**
+ *
+ *
+ * Responsive base styles
+ *
+ *
+ **/
+
+ @media (min-width: 992px) { 
+  h1, h2, h3, h4, h5 { 
+    margin-top: 0;
+  }
+ }

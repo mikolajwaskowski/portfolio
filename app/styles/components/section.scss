@@ -83,7 +83,7 @@
   }
 }
 .section--portfolio-item {
-  padding: 120px 80px;
+  padding: 20px 40px 100px;
   min-height: 400px;
 }
 .section__media--portfolio-item {
@@ -96,6 +96,7 @@
 }
 .section__media--portfolio-item:after {
   content: '';
+  display: block;
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -129,9 +130,9 @@
   background-color: #dadada;
 }
 .section__text {
-  order: 2;
-	width: 50%;
-  padding: 0 2rem 2rem;
+  order: 1;
+	width: 100%;
+  padding: 0 0.6rem 2rem;
   box-sizing: border-box;
 
   p {
@@ -143,8 +144,8 @@
   color: $brand-primary;
 }
 .section__media {
-  order: 1;
-  width: 50%;
+  order: 2;
+  width: 100%;
   text-align: center;
 }
 
@@ -175,7 +176,7 @@
     width: 21px;
     height: 34px;
     background: url('../images/icon-scroll.svg') no-repeat center top;
-    display: block;
+    display: none;
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -221,4 +222,61 @@
   text-align: center;
 }
 
+
+
+/**
+ *
+ *  Responsive styles
+ *
+ */
+
+ .section--mobile-top {
+  order: 1;
+}
+
+.section--mobile-bottom {
+  order: 2;
+}
+
+@media (min-width: 576px) {
+  //
+}
+
+@media (min-width: 768px) {
+  //
+}
+
+@media (min-width: 992px) {
+ .section--mobile-top {
+    order: 2;
+ }
+  .section--mobile-bottom {
+    order: 1;
+  }
+  .section__text {
+    width: 50%;
+  }
+  .section__media {
+    width: 50%;
+  }
+  .section__text {
+    order: 2;
+  }
+  .section__media {
+    order: 1;
+  }
+  .section--portfolio-item {
+    padding: 40px 80px 180px;
+  }
+  .section__text {
+    padding: 0 2rem 2rem;
+  }
+  .background--header:after {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  //
+}
 

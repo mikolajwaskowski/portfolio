@@ -8,6 +8,8 @@
 .button {
   display: inline-block;
 	padding: $button-padding;
+  margin-right: $button-margin-right;
+  margin-bottom: $button-margin-bottom;
   background-color: $brand-secondary-lighten;
   border: 1px solid $brand-secondary-lighten;
   color: #fff;
@@ -76,6 +78,10 @@
   margin-bottom: 3rem;
 }
 
+.button--show-more {
+  cursor: pointer;
+}
+
 .button--loading {
   transition: opacity 0.3s;
   opacity: 0.6;
@@ -84,17 +90,6 @@
 
 @keyframes pulse {
   50%   { transform: scale(0.94, 0.94); }
-}
-
-
-/*
-*
-* Button Spacing
-*
-*/
-
-.button + .button {
-  margin-left: 16px
 }
 
 
