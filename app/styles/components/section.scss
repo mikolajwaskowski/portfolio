@@ -170,6 +170,7 @@
   background: -webkit-linear-gradient(45deg, #ededed 0%,#fff 100%);
   background: linear-gradient(45deg, #ededed 0%,#fff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29000000', endColorstr='#00000000',GradientType=1 );
+  overflow: hidden;
 
   &:after {
     content: '';

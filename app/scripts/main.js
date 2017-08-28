@@ -356,6 +356,10 @@
     }
   }
 
+  function runScrollAnimations() {
+    console.log('yeah');
+  }
+
   /**
   * Runs while document is loaded...
   */
@@ -381,6 +385,9 @@
 
     // make portoflio item alive
     viewChanger();
+
+    // scroll animations
+    runScrollAnimations();
   }
   document.addEventListener('DOMContentLoaded', loaded, false);
 })();
