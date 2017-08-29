@@ -84,22 +84,31 @@
 
   var PORTFOLIO_ITEMS = [
     {
-      name: 'test',
-      previewText: 'Elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.',
-      previewImage: './images/portfolio_items/1.jpg',
-      description: 'description',
-      images: ['./images/portfolio_items/1.jpg'],
-      tools: ['sketch', 'mailingHtml', 'spotify'],
-      liveAt: 'google.com'
+      name: 'mwaskowski.pl',
+      previewText: 'Strona-blog utworzona w celu zbierania wartościowych treści oraz&nbsp;prowadzenia listy książek i celów. <br /> WordPress. Szablon zbudowany z pomocą Sage starter theme. Użyty framework Semantic UI.',
+      previewImage: './images/portfolio_items/mwaskowski-0.jpg',
+      description: 'Głównymi założeniami strony były prostota i czytelność. <br> Nie mogło tam być żadnych rozpraszaczy w postaci sidebarów, elementów CTA itp. <br> Cel był prosty - gromadzenie informacji i jak najlepsze jej ukazanie. <br> Jest to moja pierwsza skórka wykonana pod CRM Wordpress.',
+      images: ['./images/portfolio_items/mwaskowski-1.jpg', './images/portfolio_items/mwaskowski-2.gif'],
+      tools: ['uxpin', 'wordpress', 'sage', 'semanticui'],
+      liveAt: 'mwaskowski.pl'
     },
     {
-      name: 'test 2',
-      previewText: 'Vestibulum sed metus in lorem tristique ullamcorper id vitae erat.',
-      previewImage: './images/portfolio_items/2.jpg',
-      description: 'description 2',
-      images: ['./images/portfolio_items/2.jpg', './images/portfolio_items/1.jpg'],
-      tools: ['sketch', 'mailingHtml'],
-      liveAt: 'facebook.com'
+      name: 'mamwiecej.pl',
+      previewText: 'Aplikacja internetowa do zarządzania finansami. Umożliwia prowadzenie budżetu domowego, planowanie finansów; dostarcza raporty, artykuły... <br />Zbudowana na frameworku Laravel z&nbsp;pomocą Vue.js.',
+      previewImage: './images/portfolio_items/mamwiecej-0.jpg',
+      description: 'Aplikacja jest rezultatem pisania pracy dyplomowej na studiach inżynierkich. <br />Pozwala zarządzać finansami: tworzyć transakcje, przydzielać do nich kategorie i podkategorie. <br /> Po dodaniu transakcji mamy do dyspozycji raporty, takie jak: <br /> miesięczne wydatki z podziałem na kategorie, wykres przychodów, cashflow i inne. <br /><br /> Aplikacja w trakcie realizacji.',
+      images: ['./images/portfolio_items/mamwiecej-1.jpg'],
+      tools: ['uxpin', 'photoshop', 'bootstrap', 'laravel', 'vue'],
+      liveAt: 'mamwiecej.pl'
+    },
+    {
+      name: 'Portfolio',
+      previewText: 'Sprawdź jak robiłem portfolio, które aktualnie oglądasz. <br /> Żadnych frameworków, gridów, bilbiotek! <br/> HTML: 11&nbsp;KB, CSS: 15&nbsp;KB, JS: 12&nbsp;KB.',
+      previewImage: './images/portfolio_items/portfolio-0.jpg',
+      description: 'Poza głównym zadaniem portfolio jakim jest przedstawienie moich prac, za cel postawiłem sobie zbudowanie strony od zera. Bez pomocy jakichkolwiek gotowych rozwiązań: frameworków css, gridów, bibliotek itp. Jedyną pomocą jest Google Web Starter Kit, który dostarcza narzędzia ułatwiające tworzenie aplikacji internetowych (ukrywam się ze ScrollTrigger - miniaturową, 1KB biblioteczką do obsługi animacji, nikomu o niej nie mów :))',
+      images: ['./images/portfolio_items/portfolio-1.jpg'],
+      tools: ['sketch', 'googleStarter', 'scss', 'rwd'],
+      liveAt: 'github.com/mikolajwaskowski/portfolio'
     }
   ];
 
@@ -108,6 +117,10 @@
       name: 'Sketch',
       icon: './images/tool-sketch.png'
     },
+    photoshop: {
+      name: 'Adobe Photoshop',
+      icon: './images/tool-photoshop.png'
+    },
     mailingHtml: {
       name: 'E-mailing HTML',
       icon: './images/tool-template.png'
@@ -115,6 +128,46 @@
     spotify: {
       name: 'Spotify',
       icon: './images/tool-spotify.png'
+    },
+    uxpin: {
+      name: 'UXPin',
+      icon: './images/tool-uxpin.png'
+    },
+    wordpress: {
+      name: 'WordPress',
+      icon: './images/tool-wordpress.png'
+    },
+    sage: {
+      name: 'Sage',
+      icon: './images/tool-sage.png'
+    },
+    semanticui: {
+      name: 'Semantic UI',
+      icon: './images/tool-semanticui.png'
+    },
+    bootstrap: {
+      name: 'Bootstrap',
+      icon: './images/tool-bootstrap.png'
+    },
+    laravel: {
+      name: 'Laravel',
+      icon: './images/tool-laravel.png'
+    },
+    vue: {
+      name: 'Vue.js',
+      icon: './images/tool-vue.png'
+    },
+    googleStarter: {
+      name: 'Google Web Starter Kit',
+      icon: './images/tool-googlestarter.png'
+    },
+    rwd: {
+      name: 'Responsive Web Design',
+      icon: './images/tool-template.png'
+    },
+    scss: {
+      name: 'SCSS',
+      icon: './images/tool-sass.png'
     }
   };
 
