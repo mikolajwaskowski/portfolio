@@ -118,6 +118,8 @@
     }
   };
 
+  var ANIMATION = '260 animation__fade-in-up animation__out once';
+
   /**
   * Gets contact form input values
   * @return {object} set of inputs -> object[input_name] = input_value
@@ -258,6 +260,7 @@
   function scrollTo(event) {
     // goto section marked as button data-goto attribute
     document.getElementById(event.target.getAttribute('data-goto')).scrollIntoView({
+      // works only for Firefox... :(
       behavior: 'smooth'
     });
     // need to close menu overlay?
@@ -282,6 +285,7 @@
       sectionMedia.innerHTML = '<img src="' + element.previewImage + '" alt="portfolio_item" class="button--show-more" data-itemid="' + index + '" />';
       // create box for item name and description
       var sectionText = document.createElement('div');
+      sectionText.dataset.scroll = ANIMATION;
       sectionText.className += ' section__text section__text--portfolio-item ';
       sectionText.innerHTML = '<h3 class="section__title">' + element.name + '</h3>';
       sectionText.innerHTML += '<p>' + element.previewText + '</p>';
@@ -356,9 +360,12 @@
     }
   }
 
+  /*eslint-disable */
   function runScrollAnimations() {
-    console.log('yeah');
+    ScrollTrigger.init();
+    console.log('Info: ScrollTrigger activated');
   }
+  /*eslint-enable */
 
   /**
   * Runs while document is loaded...

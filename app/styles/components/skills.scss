@@ -1,0 +1,19 @@
+/*
+*
+* Skills styles
+*
+*/
+.skills {
+  font-size: 15px;
+  margin-bottom: 0.6rem;
+  opacity: 0.8;
+  list-style-position: inside;
+}
+
+.skills--done {
+  list-style-image: url('/images/icon-ul-check.svg');
+}
+
+.skills--learn {
+  list-style-image: url('/images/icon-ul-plus.svg');
+}

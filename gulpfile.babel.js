@@ -39,7 +39,7 @@ const reload = browserSync.reload;
 
 // Lint JavaScript
 gulp.task('lint', () =>
-  gulp.src(['app/scripts/**/*.js','!node_modules/**'])
+  gulp.src(['app/scripts/**/*.js','!node_modules/**', '!app/scripts/ScrollTrigger.min.js'])
     .pipe($.eslint())
     .pipe($.eslint.format())
     .pipe($.if(!browserSync.active, $.eslint.failAfterError()))
@@ -112,6 +112,7 @@ gulp.task('scripts', () =>
       //       to be correctly concatenated
       './app/scripts/main.js',
       // Other scripts
+      './app/scripts/scrolltrigger.min.js'
     ])
       .pipe($.newer('.tmp/scripts'))
       .pipe($.sourcemaps.init())

@@ -1,0 +1,27 @@
+/*
+*
+* Animations styles
+*
+*/
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animation__fade-in-up {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  opacity: 1;
+}
+
+.animation__out {
+	opacity: 0;
+}
