@@ -383,7 +383,7 @@
       toolsContainer.innerHTML += '<div class="tools_item"><img src="' + TOOLS[element].icon + '" alt="" class=""><p>' + TOOLS[element].name + '</p></div>';
     });
     liveAt.innerHTML = '<p>' + PORTFOLIO_ITEMS[itemId].liveAt + '</p>';
-    externalLinkButton.href = '//' + PORTFOLIO_ITEMS[itemId].liveAt;
+    externalLinkButton.href = 'http://' + PORTFOLIO_ITEMS[itemId].liveAt;
   }
 
   /**
