@@ -1,14 +1,14 @@
 # Portfolio
-> I'm a Front-end developer and Web designer combination.  I'm currently creating my portfolio site, feel free send me feedback about it :)
+> I'm a Front-end developer and UI designer combination.  I'm currently creating my portfolio site, feel free to send me a feedback about it :)
 
-You can watch it here: [mikolajwaskowski.github.io/portfolio](https://mikolajwaskowski.github.io/portfolio/)
+Live version: [mikolajwaskowski.github.io/portfolio](https://mikolajwaskowski.github.io/portfolio/)
 
 ![](screenshot.png)
 
 ## Goals
-- [ ] Design: Simple and clean, pure animation
-- [ ] HTML: HTML5
-- [ ] CSS: BEM, ~~frameworks~~
+- [x] Design: Simple and clean, pure animation
+- [x] HTML: HTML5
+- [x] CSS: BEM, ~~frameworks~~
 - [ ] JS: ES6 witch babel conversion
 - [ ] SEO: Schema.org
 
@@ -17,8 +17,9 @@ You can watch it here: [mikolajwaskowski.github.io/portfolio](https://mikolajwas
 List of commands:
 
 ```sh
-npm install
-gulp serve
+npm install // install required dependencies
+gulp serve // server on localhost witch live-reload
+gulp // build /disc folder
 ```
 
 ## Built with

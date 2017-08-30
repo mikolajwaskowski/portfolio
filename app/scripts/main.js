@@ -84,15 +84,6 @@
 
   var PORTFOLIO_ITEMS = [
     {
-      name: 'mwaskowski.pl',
-      previewText: 'Strona-blog utworzona w celu zbierania wartościowych treści oraz&nbsp;prowadzenia listy książek i celów. <br /> WordPress. Szablon zbudowany z pomocą Sage starter theme. Użyty framework Semantic UI.',
-      previewImage: './images/portfolio_items/mwaskowski-0.jpg',
-      description: 'Głównymi założeniami strony były prostota i czytelność. <br> Nie mogło tam być żadnych rozpraszaczy w postaci sidebarów, elementów CTA itp. <br> Cel był prosty - gromadzenie informacji i jak najlepsze jej ukazanie. <br> Jest to moja pierwsza skórka wykonana pod CRM Wordpress.',
-      images: ['./images/portfolio_items/mwaskowski-1.jpg', './images/portfolio_items/mwaskowski-2.gif'],
-      tools: ['uxpin', 'wordpress', 'sage', 'semanticui'],
-      liveAt: 'mwaskowski.pl'
-    },
-    {
       name: 'mamwiecej.pl',
       previewText: 'Aplikacja internetowa do zarządzania finansami. Umożliwia prowadzenie budżetu domowego, planowanie finansów; dostarcza raporty, artykuły... <br />Zbudowana na frameworku Laravel z&nbsp;pomocą Vue.js.',
       previewImage: './images/portfolio_items/mamwiecej-0.jpg',
@@ -102,13 +93,31 @@
       liveAt: 'mamwiecej.pl'
     },
     {
+      name: 'mwaskowski.pl',
+      previewText: 'Strona-blog utworzona w celu zbierania wartościowych treści oraz&nbsp;prowadzenia listy książek i celów. <br /> WordPress. Szablon zbudowany z pomocą Sage starter theme. Użyty framework Semantic UI.',
+      previewImage: './images/portfolio_items/mwaskowski-0.jpg',
+      description: 'Głównymi założeniami strony były prostota i czytelność. <br> Nie mogło tam być żadnych rozpraszaczy w postaci sidebarów, elementów CTA itp. <br> Cel był prosty - gromadzenie informacji i jak najlepsze jej ukazanie. <br> Jest to moja pierwsza skórka wykonana pod CRM Wordpress.',
+      images: ['./images/portfolio_items/mwaskowski-1.jpg', './images/portfolio_items/mwaskowski-2.gif'],
+      tools: ['uxpin', 'wordpress', 'sage', 'semanticui'],
+      liveAt: 'mwaskowski.pl'
+    },
+    {
       name: 'Portfolio',
-      previewText: 'Sprawdź jak robiłem portfolio, które aktualnie oglądasz. <br /> Żadnych frameworków, gridów, bilbiotek! <br/> HTML: 11&nbsp;KB, CSS: 15&nbsp;KB, JS: 12&nbsp;KB.',
+      previewText: 'Sprawdź jak robiłem portfolio, które aktualnie oglądasz. <br /> Żadnych frameworków, gridów, bilbiotek! <br/> Waga requestów plików: <br /> index.html: 4&nbsp;KB, &nbsp;main.css: 5&nbsp;KB, &nbsp;main.js: 5&nbsp;KB',
       previewImage: './images/portfolio_items/portfolio-0.jpg',
-      description: 'Poza głównym zadaniem portfolio jakim jest przedstawienie moich prac, za cel postawiłem sobie zbudowanie strony od zera. Bez pomocy jakichkolwiek gotowych rozwiązań: frameworków css, gridów, bibliotek itp. Jedyną pomocą jest Google Web Starter Kit, który dostarcza narzędzia ułatwiające tworzenie aplikacji internetowych (ukrywam się ze ScrollTrigger - miniaturową, 1KB biblioteczką do obsługi animacji, nikomu o niej nie mów :))',
+      description: 'Poza głównym zadaniem portfolio, jakim jest przedstawienie prac, za cel postawiłem sobie utworzenie go bez korzystania z gotowych rozwiązań - frameworków, gridów, bibliotek itp. Jedyną pomocą jest Google Web Starter Kit, który dostarcza narzędzia, takie jak kompilacja scss czy optymalizacja grafik, ułatwiające tworzenie aplikacji internetowych. <div style="margin-top: 0.6rem; opacity: 0.4">Ukrywam się ze ScrollTrigger - miniaturową (1KB) biblioteczką do obsługi animacji, <br /> nikomu nie mów pls :)</div>',
       images: ['./images/portfolio_items/portfolio-1.jpg'],
       tools: ['sketch', 'googleStarter', 'scss', 'rwd'],
       liveAt: 'github.com/mikolajwaskowski/portfolio'
+    },
+    {
+      name: 'Newsletter etransport.pl',
+      previewText: 'Newsletter w nowoczesnej formie. Głównym zadaniem było pokazanie wartościowych informacji. <br />Struktura maila pozwala go skanować wzrokiem, jest&nbsp;przyjazna dla użytkownika.',
+      previewImage: './images/portfolio_items/newsletter-etr-0.jpg',
+      description: 'Nie jest to klasyczna lista z wiadomościami. Duże grafiki newslettera przyciągają wzrok, wydzielone okna jasno określają typ informacji. Całość łatwo skanuje się wzrokiem. <br />Subskrybent może szybko sprawdzić zawartość newslettera i następnie: przejść do interesujących go treści lub&nbsp;usunąć maila.',
+      images: ['./images/portfolio_items/newsletter-etr-1.jpg'],
+      tools: ['uxpin', 'mailingHtml', 'spotify'],
+      liveAt: 'mwaskowski.pl/projekty/newsletter-etransport'
     }
   ];
 
@@ -126,7 +135,7 @@
       icon: './images/tool-template.png'
     },
     spotify: {
-      name: 'Spotify',
+      name: 'Spotify <span style="opacity:.3;font-size:0.9em;">:)</span>',
       icon: './images/tool-spotify.png'
     },
     uxpin: {
@@ -335,7 +344,7 @@
       // create box for item preview
       var sectionMedia = document.createElement('div');
       sectionMedia.className += ' section__media section__media--portfolio-item ';
-      sectionMedia.innerHTML = '<img src="' + element.previewImage + '" alt="portfolio_item" class="button--show-more" data-itemid="' + index + '" />';
+      sectionMedia.innerHTML = '<img src="' + element.previewImage + '" alt="' + element.name + ' - podgląd" class="button--show-more" data-itemid="' + index + '" />';
       // create box for item name and description
       var sectionText = document.createElement('div');
       sectionText.dataset.scroll = ANIMATION;
@@ -367,7 +376,7 @@
     imagesContainer.innerHTML = '';
     // fill images container with new images
     PORTFOLIO_ITEMS[itemId].images.forEach(function(element, index) {
-      imagesContainer.innerHTML += '<img src="' + element + '" alt="' + PORTFOLIO_ITEMS[itemId].name + ' - #' + index + ' presentation image" class="portfolio__image" /> ';
+      imagesContainer.innerHTML += '<img src="' + element + '" alt="' + PORTFOLIO_ITEMS[itemId].name + ' - #' + index + ' grafika prezentująca pracę" class="portfolio__image" /> ';
     });
     toolsContainer.innerHTML = '';
     PORTFOLIO_ITEMS[itemId].tools.forEach(function(element) {
