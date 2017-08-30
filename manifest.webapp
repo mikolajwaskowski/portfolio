@@ -1,25 +1,29 @@
 {
   "version": "1.0.0",
-  "name": "Web Starter Kit",
+  "name": "Mikolaj Waskowski Portfolio",
   "launch_path": "/index.html",
-  "description": "A front-end template that helps you build fast, modern mobile web apps.",
+  "description": "My Front-end designer portfolio - I'm a Front-end developer and UI designer combination.",
   "icons": {
     "128": "/images/touch/icon-128x128.png"
   },
   "developer": {
-    "name": "",
+    "name": "Mikolaj Waskowski",
     "url": ""
   },
   "installs_allowed_from": [
     "*"
   ],
-  "default_locale": "en",
+  "default_locale": "pl",
   "permissions": {
   },
   "locales": {
     "en": {
-      "name": "Web Starter Kit",
-      "description": "A front-end template that helps you build fast, modern mobile web apps."
-    }
+      "name": "Mikolaj Waskowski Portfolio",
+      "description": "My Front-end designer portfolio - I'm a Front-end developer and UI designer combination."
+    },
+    "pl": {
+      "name": "Miko³aj Wa¶kowski Portfolio",
+      "description": "Moje Portfolio :) Jestem kombinacj± Front-end developera i UI designera."
+    },
   }
 }
