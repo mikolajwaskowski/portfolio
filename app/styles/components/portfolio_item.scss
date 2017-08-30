@@ -14,9 +14,14 @@
 	padding-bottom: 6rem;
 }
 
+.portfolio__item-name {
+  font-size: $fz-h3;
+}
+
 .portfolio__header {
 	margin-top: 3rem;
 	margin-bottom: 0.6rem;
+  font-size: $fz-h4;
 }
 
 .portfolio__image {
@@ -25,6 +30,10 @@
 	height: auto;
 	margin: 2rem auto;
 	padding-bottom: 1rem;
+}
+
+.portfolio__live-at {
+  word-wrap:break-word;
 }
 
 .tools {
@@ -37,4 +46,16 @@
 	display: inline-block;
 	margin: 0.4rem 1.6rem 1rem;
 	font-size: $fz-small;
+}
+
+
+@media (min-width: 576px) {
+  .portfolio__item-name {
+    font-size: $fz-h1;
+  }
+  .portfolio__header {
+    margin-top: 3rem;
+    margin-bottom: 0.6rem;
+    font-size: $fz-h3;
+  }
 }
