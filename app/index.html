@@ -83,7 +83,7 @@
         Nazywam się Mikołaj Waśkowski, jestem młodym - 24-letnim, ambitnym człowiekiem, który znakomicie się czuje w zgranym zespole. Uwielbiam tworzyć nowe rzeczy, które nie tylko dobrze wyglądają, ale są przede wszystkim użyteczne.
       </p>
       <p>
-        Pasjonuję się stronami internetowymi odkąd pamiętam - strona teamu Counter-Strike'a. Zainteresowanie to rozwinęło się do&nbsp;stopnia tworzenia prototypów aplikacji i&nbsp;poszerzania wiedzy z zakresu doświadczeń użytkownika i użyteczności rozwiązań.
+        Pasjonuję się stronami internetowymi odkąd pamiętam (pierwsza strona teamu Counter-Strike'a). Zainteresowanie to rozwinęło się do&nbsp;stopnia tworzenia prototypów aplikacji i&nbsp;poszerzania wiedzy z zakresu doświadczeń użytkownika i użyteczności rozwiązań.
       </p>
       <p>
         Jestem ciekawy świata, szybko się uczę.
@@ -107,7 +107,7 @@
     <div class="section__text" data-scroll="260 animation__fade-in-up animation__out once">
       <h2 class="section__title">Co portafię?</h2>
       <p>
-        Po zrozumieniu problemu biznesowego jaki ma rozwiązać aplikacja, tworzę prototypy jej widoków. Po uznaniu rozwiązań za sensowne projektuję w Sketchu spójny, gotowy do zaimplementowania interfejs użytkownika. Tworzę komponenty Vue.js i "ożywiam" aplikację. Wykonuję proste API z pomocą Laravela i łączę ze sobą przygotowane warstwy aplikacji.
+        Po zrozumieniu problemu biznesowego jaki ma rozwiązać aplikacja, tworzę prototypy jej widoków. Po uznaniu rozwiązań za sensowne projektuję w Sketchu spójny, gotowy do zaimplementowania interfejs użytkownika. Tworzę komponenty Vue.js i "ożywiam" aplikację. Wykonuję proste API z pomocą Laravela i łączę ze sobą przygotowane warstwy aplikacji. Testuję rozwiązania i wprowadzam poprawki / ulepszenia.
       </p>
     </div>
   </section>
@@ -192,21 +192,15 @@
       </div>
       <div class="section__footer">
         <div class="social">
-          <div class="social__item social__item--github">
-            <a href="https://github.com/mikolajwaskowski" target="_blank">
-              <img src="./images/icon-github.svg" alt="" class="social__icon" />
-            </a>
-          </div>
-          <div class="social__item social__item--facebook">
-            <a href="https://www.facebook.com/waskowski.mikolaj" target="_blank">
-              <img src="./images/icon-facebook.svg" alt="" class="social__icon" />
-            </a>
-          </div>
-          <div class="social__item social__item--twitter">
-            <a href="https://twitter.com/waskowskim" target="_blank">
-              <img src="./images/icon-twitter.svg" alt="" class="social__icon" />
-            </a>
-          </div>
+          <a href="https://github.com/mikolajwaskowski" class="social__item social__item--github" target="_blank" >
+            <img src="./images/icon-github.svg" alt="GitHub" class="social__icon" />
+          </a>
+          <a href="https://www.facebook.com/waskowski.mikolaj" class="social__item social__item--facebook" target="_blank">
+            <img src="./images/icon-facebook.svg" alt="Facebook" class="social__icon" />
+          </a>
+          <a href="https://twitter.com/waskowskim" class="social__item social__item--twitter" target="_blank">
+            <img src="./images/icon-twitter.svg" alt="Twitter" class="social__icon" />
+          </a>
         </div>
       </div>
     </div>
@@ -216,7 +210,7 @@
   <!-- screen portfolio-item -->
   <div class="screen screen--portfolio-item">
     <aside class="container container--portfolio-item">
-      <button class="button button--text button--back button--block"><img src="./images/icon-back.svg" alt="" class="button__icon--back" /> Wróć</button>
+      <button tabindex="-1" class="button button--text button--back button--block"><img src="./images/icon-back.svg" alt="" class="button__icon--back" /> Wróć</button>
       <div class="narrow_container">
         <h1 class="portfolio__item-name"></h1>
         <p class="portfolio__item-description">
@@ -237,10 +231,13 @@
         <div class="portfolio__live-at">
           <!-- filled by js: PORTFOLIO_ITEMS.liveAt -->
         </div>
-        <a href="#" class="button button--primary button--live-at" target="_blank"> Zobacz <img src="./images/icon-external-link-white.svg" alt="" class="button__icon" /> </a>
-        <br>
+        <a href="#" class="button button--primary button--live-at" target="_blank" tabindex="-1">Zobacz <img src="./images/icon-external-link-white.svg" alt="" class="button__icon" /></a>
+        
+        <div class="portfolio--code-at">
+          <!-- filled by js: PORTFOLIO_ITEMS.codeAt -->
+        </div>
 
-        <button class="button button--text button--back"><img src="./images/icon-back.svg" alt="" class="button__icon--back" /> Wróć</button>
+        <button class="button button--text button--back" tabindex="-1"><img src="./images/icon-back.svg" alt="" class="button__icon--back" /> Wróć</button>
       </div>
     </aside>
   </div>

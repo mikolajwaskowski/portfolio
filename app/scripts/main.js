@@ -90,7 +90,8 @@
       description: 'Aplikacja jest rezultatem pisania pracy dyplomowej na studiach inżynierkich. <br />Pozwala zarządzać finansami: tworzyć transakcje, przydzielać do nich kategorie i podkategorie. <br /> Po dodaniu transakcji mamy do dyspozycji raporty, takie jak: <br /> miesięczne wydatki z podziałem na kategorie, wykres przychodów, cashflow i inne. <br /><br /> Aplikacja w trakcie realizacji.',
       images: ['./images/portfolio_items/mamwiecej-1.jpg'],
       tools: ['uxpin', 'photoshop', 'bootstrap', 'laravel', 'vue'],
-      liveAt: 'mamwiecej.pl'
+      liveAt: 'mamwiecej.pl',
+      codeAt: ''
     },
     {
       name: 'mwaskowski.pl',
@@ -99,7 +100,8 @@
       description: 'Głównymi założeniami strony były prostota i czytelność. <br> Nie mogło tam być żadnych rozpraszaczy w postaci sidebarów, elementów CTA itp. <br> Cel był prosty - gromadzenie informacji i jak najlepsze jej ukazanie. <br> Jest to moja pierwsza skórka wykonana pod CRM Wordpress.',
       images: ['./images/portfolio_items/mwaskowski-1.jpg', './images/portfolio_items/mwaskowski-2.gif'],
       tools: ['uxpin', 'wordpress', 'sage', 'semanticui'],
-      liveAt: 'mwaskowski.pl'
+      liveAt: 'mwaskowski.pl',
+      codeAt: ''
     },
     {
       name: 'Portfolio',
@@ -108,7 +110,8 @@
       description: 'Poza głównym zadaniem portfolio, jakim jest przedstawienie prac, za cel postawiłem sobie utworzenie go bez korzystania z gotowych rozwiązań - frameworków, gridów, bibliotek itp. Jedyną pomocą jest Google Web Starter Kit, który dostarcza narzędzia, takie jak kompilacja scss czy optymalizacja grafik, ułatwiające tworzenie aplikacji internetowych. <div style="margin-top: 0.6rem; opacity: 0.4">Ukrywam się ze ScrollTrigger - miniaturową (1KB) biblioteczką do obsługi animacji, <br /> nikomu nie mów pls :)</div>',
       images: ['./images/portfolio_items/portfolio-1.jpg'],
       tools: ['sketch', 'googleStarter', 'scss', 'rwd'],
-      liveAt: 'github.com/mikolajwaskowski/portfolio'
+      liveAt: 'mikolajwaskowski.github.io/portfolio/',
+      codeAt: 'github.com/mikolajwaskowski/portfolio'
     },
     {
       name: 'Newsletter etransport.pl',
@@ -117,7 +120,8 @@
       description: 'Nie jest to klasyczna lista z wiadomościami. Duże grafiki newslettera przyciągają wzrok, wydzielone okna jasno określają typ informacji. Całość łatwo skanuje się wzrokiem. <br />Subskrybent może szybko sprawdzić zawartość newslettera i następnie: przejść do interesujących go treści lub&nbsp;usunąć maila.',
       images: ['./images/portfolio_items/newsletter-etr-1.jpg'],
       tools: ['uxpin', 'mailingHtml', 'spotify'],
-      liveAt: 'mwaskowski.pl/projekty/newsletter-etransport'
+      liveAt: 'mwaskowski.pl/projekty/newsletter-etransport',
+      codeAt: 'mwaskowski.pl/projekty/newsletter-etransport'
     }
   ];
 
@@ -300,19 +304,26 @@
   }
 
   /**
-  * Activating overlay menu
-  */
-  function menuTrigger() {
-    var overlay = document.getElementById('overlay');
-    overlay.classList.toggle('menu-overlay--open');
-  }
-
-  /**
   * Check that menu is opened (overlay is active)
   * @return {boolean} Menu active?
   */
   function overlayActive() {
     return document.getElementById('overlay').classList.contains('menu-overlay--open');
+  }
+
+  /**
+  * Activating overlay menu
+  */
+  function menuTrigger() {
+    var overlay = document.getElementById('overlay');
+    overlay.classList.toggle('menu-overlay--open');
+    // set tab focus to menu elements
+    if (overlayActive()) {
+      overlay.querySelectorAll('a').forEach(function(element, index) {
+        element.tabIndex = index + 1;
+      });
+      overlay.querySelectorAll('a')[0].focus();
+    }
   }
 
   /**
@@ -368,6 +379,7 @@
     var imagesContainer = document.querySelector('.portfolio__images');
     var toolsContainer = document.querySelector('.tools');
     var liveAt = document.querySelector('.portfolio__live-at');
+    var codeAt = document.querySelector('.portfolio--code-at');
     var externalLinkButton = document.querySelector('.button--live-at');
 
     itemName.innerHTML = PORTFOLIO_ITEMS[itemId].name;
@@ -383,6 +395,15 @@
       toolsContainer.innerHTML += '<div class="tools_item"><img src="' + TOOLS[element].icon + '" alt="" class=""><p>' + TOOLS[element].name + '</p></div>';
     });
     liveAt.innerHTML = '<p>' + PORTFOLIO_ITEMS[itemId].liveAt + '</p>';
+
+    if (PORTFOLIO_ITEMS[itemId].codeAt) {
+      codeAt.className = 'portfolio--code-at portfolio--code-link';
+      codeAt.innerHTML = '<a href="http://' + PORTFOLIO_ITEMS[itemId].codeAt + '" class="button button--primary button--outline" target="_blank" tabindex="-1">Kod źródłowy <img src="./images/icon-external-link.svg" alt="" class="button__icon button__icon--dimmed"></a>';
+    } else {
+      codeAt.className = 'portfolio--code-at portfolio--code-hidden';
+      codeAt.innerHTML = '<img src="./images/icon-hidden-code.svg" alt="" /><p>Kod aplikacji nie jest dostępny publicznie. <br /> Napisz do mnie, jeśli jesteś zainteresowany(a)&nbsp;współpracą :)</p>';
+    }
+
     externalLinkButton.href = 'http://' + PORTFOLIO_ITEMS[itemId].liveAt;
   }
 
@@ -411,6 +432,7 @@
       // go to the top of portfolio item description container while "show more" event
       if (view.classList.contains('view--change')) {
         portfolioDescriptionView.scrollTop = 0;
+        // portfolioDescriptionView.focus();
       }
     }
 

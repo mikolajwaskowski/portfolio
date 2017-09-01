@@ -25,7 +25,7 @@
 	float: right;
   padding: 0.5rem 0.7rem 0.4rem;
   border: 0;
-  opacity: 0.16;
+  opacity: 0.38;
   color: #000;
   font-size: 15px;
   font-weight: $fw-normal;
@@ -39,6 +39,7 @@
     display: inline-block;
     margin-left: 8px;
     margin-bottom: -1px;
+    opacity: 0.8;
   }
   
   &:hover {
@@ -111,6 +112,9 @@
   margin: 1.2rem auto;
   transform: translateY(-20px);
   transition: transform 0.3s;
+}
+.menu-overlay__item:focus {
+  background-color: #fff;
 }
 
 @for $i from 1 to 7 {
