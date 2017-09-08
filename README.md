@@ -1,5 +1,5 @@
 # Portfolio
-> I'm a Front-end developer and UI designer combination.  I'm currently creating my portfolio site, feel free to send me a feedback about it :)
+> I'm a Front-end developer and UI designer combination. Feel free to send me a feedback about this project :)
 
 Live version: [mikolajwaskowski.github.io/portfolio](https://mikolajwaskowski.github.io/portfolio/)
 
@@ -20,6 +20,8 @@ List of commands:
 npm install // install required dependencies
 gulp serve // server on localhost witch live-reload
 gulp // build /disc folder
+
+git subtree push --prefix dist origin gh-pages // push subtree /dist into gh-pages branch
 ```
 
 ## Built with
@@ -28,8 +30,6 @@ gulp // build /disc folder
 
 
 ## Release history
-* 0.2
-    * -First change-
 * 0.1
     * Work in progress
 
