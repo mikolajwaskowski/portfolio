@@ -85,9 +85,9 @@
   var PORTFOLIO_ITEMS = [
     {
       name: 'mamwiecej.pl',
-      previewText: 'Aplikacja internetowa do zarządzania finansami. Umożliwia prowadzenie budżetu domowego, planowanie finansów; dostarcza raporty, artykuły... <br />Zbudowana na frameworku Laravel z&nbsp;pomocą Vue.js.',
+      previewText: 'Aplikacja internetowa do zarządzania finansami. Umożliwia prowadzenie budżetu domowego, planowanie finansów; generuje raporty w postaci wykresów... <br />Zbudowana na frameworku Laravel z&nbsp;pomocą Vue.js.',
       previewImage: './images/portfolio_items/mamwiecej-0.jpg',
-      description: 'Aplikacja jest rezultatem pisania pracy dyplomowej na studiach inżynierkich. <br />Pozwala zarządzać finansami: tworzyć transakcje, przydzielać do nich kategorie i podkategorie. <br /> Po dodaniu transakcji mamy do dyspozycji raporty, takie jak: <br /> miesięczne wydatki z podziałem na kategorie, wykres przychodów, cashflow i inne. <br /><br /> Aplikacja w trakcie realizacji.',
+      description: 'Aplikacja jest rezultatem napisania i obrony pracy dyplomowej na studiach inżynierkich. <br />Pozwala zarządzać finansami: tworzyć transakcje, przydzielać do nich kategorie i podkategorie. <br /> Po dodaniu transakcji mamy do dyspozycji raporty, np.: <br /> miesięczne wydatki z podziałem na kategorie, wykres przychodów, cashflow i inne. <br /><br /> ...Tak, obrona na 5! :)',
       images: ['./images/portfolio_items/mamwiecej-1.jpg'],
       tools: ['uxpin', 'photoshop', 'bootstrap', 'laravel', 'vue'],
       liveAt: 'mamwiecej.pl',
@@ -95,9 +95,9 @@
     },
     {
       name: 'mwaskowski.pl',
-      previewText: 'Strona-blog utworzona w celu zbierania wartościowych treści oraz&nbsp;prowadzenia listy książek i celów. <br /> WordPress. Szablon zbudowany z pomocą Sage starter theme. Użyty framework Semantic UI.',
+      previewText: 'Strona-blog utworzona w celu zbierania wartościowych treści oraz&nbsp;prowadzenia mojej listy książek i celów. <br /> WordPress. Szablon zbudowany z pomocą Sage Starter Theme. Użyty framework: Semantic UI.',
       previewImage: './images/portfolio_items/mwaskowski-0.jpg',
-      description: 'Głównymi założeniami strony były prostota i czytelność. <br> Nie mogło tam być żadnych rozpraszaczy w postaci sidebarów, elementów CTA itp. <br> Cel był prosty - gromadzenie informacji i jak najlepsze jej ukazanie. <br> Jest to moja pierwsza skórka wykonana pod CRM Wordpress.',
+      description: 'Głównymi założeniami strony były prostota i czytelność. <br> Nie mogło tam być żadnych rozpraszaczy w postaci sidebarów, elementów CTA itp. <br> Cel był prosty - gromadzenie informacji i jak najlepsze jej ukazanie. <br> Jest to moja pierwsza skórka wykonana pod Wordpress.',
       images: ['./images/portfolio_items/mwaskowski-1.jpg', './images/portfolio_items/mwaskowski-2.gif'],
       tools: ['uxpin', 'wordpress', 'sage', 'semanticui'],
       liveAt: 'mwaskowski.pl',
@@ -107,7 +107,7 @@
       name: 'Portfolio',
       previewText: 'Sprawdź jak robiłem portfolio, które aktualnie oglądasz. <br /> Żadnych frameworków, gridów, bilbiotek! <br/> Waga requestów plików: <br /> index.html: 4&nbsp;KB, &nbsp;main.css: 5&nbsp;KB, &nbsp;main.js: 5&nbsp;KB',
       previewImage: './images/portfolio_items/portfolio-0.jpg',
-      description: 'Poza głównym zadaniem portfolio, jakim jest przedstawienie prac, za cel postawiłem sobie utworzenie go bez korzystania z gotowych rozwiązań - frameworków, gridów, bibliotek itp. Jedyną pomocą jest Google Web Starter Kit, który dostarcza narzędzia, takie jak kompilacja scss czy optymalizacja grafik, ułatwiające tworzenie aplikacji internetowych. <div style="margin-top: 0.6rem; opacity: 0.4">Ukrywam się ze ScrollTrigger - miniaturową (1KB) biblioteczką do obsługi animacji, <br /> nikomu nie mów pls :)</div>',
+      description: 'Poza głównym zadaniem portfolio, jakim jest przedstawienie prac, za cel postawiłem sobie utworzenie go bez korzystania z gotowych rozwiązań - frameworków, gridów, bibliotek itp. Jedyną pomocą jest Google Web Starter Kit, który dostarcza narzędzia ułatwiające tworzenie aplikacji internetowych, np. kompilacja SCSS do CSS, optymalizacja grafik itp. <div style="margin-top: 0.6rem; opacity: 0.4">PS. Ukrywam się ze ScrollTrigger\'em - miniaturową (1KB) biblioteczką do obsługi animacji. <br /> Nikomu nie mów :)</div>',
       images: ['./images/portfolio_items/portfolio-1.jpg'],
       tools: ['sketch', 'googleStarter', 'scss', 'rwd'],
       liveAt: 'mikolajwaskowski.github.io/portfolio/',
@@ -115,9 +115,9 @@
     },
     {
       name: 'Newsletter etransport.pl',
-      previewText: 'Newsletter w nowoczesnej formie. Głównym zadaniem było pokazanie wartościowych informacji. <br />Struktura maila pozwala go skanować wzrokiem, jest&nbsp;przyjazna dla użytkownika.',
+      previewText: 'Newsletter w nowoczesnej formie. Głównym zadaniem było pokazanie wartościowych treści z ostatniego tygodnia. <br />Struktura maila pozwala go skanować wzrokiem.',
       previewImage: './images/portfolio_items/newsletter-etr-0.jpg',
-      description: 'Nie jest to klasyczna lista z wiadomościami. Duże grafiki newslettera przyciągają wzrok, wydzielone okna jasno określają typ informacji. Całość łatwo skanuje się wzrokiem. <br />Subskrybent może szybko sprawdzić zawartość newslettera i następnie: przejść do interesujących go treści lub&nbsp;usunąć maila.',
+      description: 'Nie jest to klasyczna lista z wiadomościami. Duże grafiki newslettera przyciągają wzrok, wydzielone sekcje jasno określają typ informacji. Całość łatwo skanuje się wzrokiem. <br />Subskrybent może szybko sprawdzić zawartość newslettera i następnie przejść do interesujących go treści lub,&nbsp;po prostu, usunąć maila :)',
       images: ['./images/portfolio_items/newsletter-etr-1.jpg'],
       tools: ['uxpin', 'mailingHtml', 'spotify'],
       liveAt: 'mwaskowski.pl/projekty/newsletter-etransport',
@@ -192,14 +192,11 @@
   */
   function getFormData() {
     var form = document.getElementById('contact_form');
-    // get form inputs data
-    var data = {};
-    Object.keys(form.elements).map(function(key) {
-      if (isNaN(key)) {
-        data[key] = form.elements[key].value;
-      }
-    });
-    return data;
+    return {
+      email: form.querySelector('input[name="email"]').value,
+      name: form.querySelector('input[name="name"]').value,
+      message: form.querySelector('textarea[name="message"]').value
+    };
   }
 
   /**
@@ -208,7 +205,7 @@
   * @return {boolean} email validation result
   */
   function emailValid(email) {
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return !re.test(email);
   }
 
